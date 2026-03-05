@@ -60,8 +60,18 @@ HEADERS = {
 
 def load_sources() -> list[dict]:
     """Load and return active sources from sources.yaml."""
-    with open(CONFIG_PATH, "r") as f:
-        config = yaml.safe_load(f)
+    if not CONFIG_PATH.exists():
+        logger.error(f"Config file not found: {CONFIG_PATH}")
+        return []
+    try:
+        with open(CONFIG_PATH, "r") as f:
+            config = yaml.safe_load(f)
+    except yaml.YAMLError as e:
+        logger.error(f"Failed to parse sources.yaml: {e}")
+        return []
+    if not config or "sources" not in config:
+        logger.warning("sources.yaml is empty or has no 'sources' key")
+        return []
     sources = [s for s in config.get("sources", []) if s.get("active", True)]
     logger.info(f"Loaded {len(sources)} active sources")
     return sources
@@ -213,7 +223,8 @@ def fetch_scrape(source: dict, hours: int) -> list[dict]:
         return []
 
     soup = BeautifulSoup(resp.text, "lxml")
-    base = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
+    parsed_url = urlparse(url)
+    base = f"{parsed_url.scheme}://{parsed_url.netloc}"
 
     links = []
     for tag in soup.select(selector):
@@ -277,14 +288,22 @@ def fetch_scrape(source: dict, hours: int) -> list[dict]:
 
 
 def deduplicate(articles: list[dict]) -> list[dict]:
-    """Deduplicate articles by URL. Keep the first occurrence."""
+    """Deduplicate articles by URL. Keep the first occurrence.
+    Articles with no URL are dropped (URL is required as a stable identifier).
+    """
     seen_urls = set()
     unique = []
+    dropped_no_url = 0
     for article in articles:
         url = article.get("url", "")
-        if url and url not in seen_urls:
+        if not url:
+            dropped_no_url += 1
+            continue
+        if url not in seen_urls:
             seen_urls.add(url)
             unique.append(article)
+    if dropped_no_url:
+        logger.warning(f"Dropped {dropped_no_url} articles with no URL during deduplication")
     return unique
 
 

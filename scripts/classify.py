@@ -34,7 +34,7 @@ logger = logging.getLogger("classify")
 REPO_ROOT = Path(__file__).parent.parent
 DATA_EXTRACTED = REPO_ROOT / "data" / "extracted"
 
-CLAUDE_MODEL = "claude-haiku-4-5-20251001"
+CLAUDE_MODEL = "claude-haiku-4-5"
 MAX_TOKENS = 1024
 
 # Ontology mapping
@@ -290,6 +290,10 @@ def main() -> int:
         except Exception as e:
             logger.warning(f"Classification failed for claim {claim.get('claim_id')}: {e}")
             level, label, rationale = heuristic_classify(claim)
+            # Apply source floor on exception path too
+            level, label, rationale = apply_source_floor(
+                level, label, rationale, source_category
+            )
             heuristic_used += 1
 
         # Update the claim

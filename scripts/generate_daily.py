@@ -258,16 +258,24 @@ def main() -> int:
 
     # Write JSON
     json_path = DATA_DAILY / f"{args.date}.json"
-    with open(json_path, "w") as f:
-        json.dump(claims, f, indent=2, default=str)
-    logger.info(f"Wrote JSON: {json_path}")
+    try:
+        with open(json_path, "w") as f:
+            json.dump(claims, f, indent=2, default=str)
+        logger.info(f"Wrote JSON: {json_path}")
+    except OSError as e:
+        logger.error(f"Failed to write JSON file {json_path}: {e}")
+        return 1
 
     # Write Markdown
     md_path = DATA_DAILY / f"{args.date}.md"
     markdown = generate_markdown(args.date, claims)
-    with open(md_path, "w") as f:
-        f.write(markdown)
-    logger.info(f"Wrote Markdown: {md_path}")
+    try:
+        with open(md_path, "w") as f:
+            f.write(markdown)
+        logger.info(f"Wrote Markdown: {md_path}")
+    except OSError as e:
+        logger.error(f"Failed to write Markdown file {md_path}: {e}")
+        return 1
 
     # Print PR body to stdout for GitHub Actions to capture
     pr_body = generate_pr_body(args.date, claims)

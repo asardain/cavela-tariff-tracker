@@ -41,7 +41,7 @@ DATA_EXTRACTED = REPO_ROOT / "data" / "extracted"
 SCHEMA_PATH = REPO_ROOT / "schema" / "claim.schema.json"
 
 # Claude model for extraction (haiku for cost efficiency)
-CLAUDE_MODEL = "claude-haiku-4-5-20251001"
+CLAUDE_MODEL = "claude-haiku-4-5"
 MAX_TOKENS = 4096
 
 # Maximum articles to process (cost control)
@@ -105,9 +105,12 @@ def extract_claims_from_article(
         logger.warning(f"Article has no content: {source_url}")
         return []
 
+    # Note: article content is untrusted. We rely on the structured system prompt
+    # and JSON output requirement to mitigate prompt injection risk. Content is
+    # also hard-capped at 3000 chars to limit injection surface.
     user_message = f"""Source: {source_name}
 URL: {source_url}
-Title: {title}
+Title: {title[:500]}
 
 Content:
 {content[:3000]}
