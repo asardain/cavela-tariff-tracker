@@ -3,7 +3,8 @@
  *
  * Question: What has the tariff history been? Is a country stable or volatile?
  *
- * Marks: small multiples (one strip per country), event dots (r=certainty),
+ * Marks: small multiples (one strip per country), event dots (uniform size,
+ *        color = action type, opacity = certainty level),
  *        volatility bands (month rect opacity = claim count).
  * export mount(container, data, options?)
  */
@@ -19,6 +20,26 @@ import {
 const MARGIN = { top: 80, right: 40, bottom: 40, left: 130 };
 const STRIP_HEIGHT = 56;
 const STRIP_GAP = 4;
+
+// Action type -> color mapping (matches feed view pills)
+const ACTION_COLOR = {
+  new_tariff:           '#dc2626',
+  tariff_increase:      '#dc2626',
+  tariff_removal:       '#16a34a',
+  tariff_pause:         '#16a34a',
+  investigation_opened: '#6b7280',
+  rule_proposed:        '#6b7280',
+  other:                '#6b7280',
+};
+
+function actionColor(action) {
+  return ACTION_COLOR[action] || '#6b7280';
+}
+
+// Certainty level (1–7) -> opacity (0.2–1.0)
+function certaintyOpacityLinear(level) {
+  return 0.2 + (level - 1) * (0.8 / 6);
+}
 
 export function mount(container, allClaims, options = {}) {
   const el = d3.select(container);
@@ -46,14 +67,17 @@ export function mount(container, allClaims, options = {}) {
   // Time domain: all published dates
   const allDates = allClaims.map(c => c.published_ts).filter(Boolean);
   const [minDate, maxDate] = d3.extent(allDates);
+
+  // Normalize today to local time (midnight) for consistent today marker + domain
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
   const xDomain = [
-    d3.timeMonth.floor(minDate || new Date(Date.now() - 90 * 864e5)),
-    d3.timeMonth.ceil(maxDate || new Date()),
+    d3.timeMonth.floor(minDate || new Date(today.getTime() - 90 * 864e5)),
+    d3.timeMonth.ceil(maxDate || today),
   ];
 
   const x = d3.scaleTime().domain(xDomain).range([0, innerW]);
-  const rScale = certaintyRadius();
-  const oScale = certaintyOpacity();
 
   const svg = el.append('svg')
     .attr('class', 'viz-svg')
@@ -61,7 +85,7 @@ export function mount(container, allClaims, options = {}) {
     .attr('height', totalH);
 
   renderAnnotations(svg, 'Tariff activity timeline by country',
-    'Each dot is a claim. Size and opacity = certainty. Background band opacity = activity volume (volatility).',
+    'Each dot is a claim. Color = action type. Opacity = certainty level. Background band opacity = activity volume (volatility).',
     MARGIN.left, 28);
 
   const g = svg.append('g').attr('transform', `translate(${MARGIN.left}, ${MARGIN.top})`);
@@ -101,7 +125,8 @@ export function mount(container, allClaims, options = {}) {
         .attr('fill', blue(bandOpacity(count)));
     });
 
-    // Event dots
+    // Event dots — uniform radius, color = action type, opacity = certainty level
+    const DOT_R = 5;
     const dotY = STRIP_HEIGHT / 2;
     strip.selectAll('.event-dot')
       .data(claims)
@@ -109,8 +134,9 @@ export function mount(container, allClaims, options = {}) {
       .attr('class', 'event-dot')
       .attr('cx', d => x(d.published_ts))
       .attr('cy', dotY)
-      .attr('r', d => rScale(d.certainty_level))
-      .attr('fill', d => blue(oScale(d.certainty_level)))
+      .attr('r', DOT_R)
+      .attr('fill', d => actionColor(d.tariff_action))
+      .attr('opacity', d => certaintyOpacityLinear(d.certainty_level || 1))
       .style('cursor', 'pointer')
       .on('mousemove', (event, d) => showTooltip(claimTooltipHtml(d), event))
       .on('mouseleave', () => hideTooltip());
@@ -138,11 +164,34 @@ export function mount(container, allClaims, options = {}) {
       .text(`${claims.length}`);
   });
 
-  // Shared x-axis at bottom
+  // Shared x-axis at bottom — one tick per month, month-name only (no duplicates)
   const axisG = g.append('g')
     .attr('transform', `translate(0, ${countries.length * (STRIP_HEIGHT + STRIP_GAP) + 8})`);
-  renderTimeAxis(axisG, x, { ticks: 8 });
+  const timeAxis = d3.axisBottom(x)
+    .ticks(d3.timeMonth.every(1))
+    .tickSize(4)
+    .tickFormat(d3.timeFormat('%b'));
+  axisG.call(timeAxis)
+    .call(ag => ag.select('.domain').attr('stroke', 'var(--border)'))
+    .call(ag => ag.selectAll('.tick line').attr('stroke', 'var(--border)'))
+    .call(ag => ag.selectAll('.tick text')
+      .attr('font-family', 'var(--font)')
+      .attr('font-size', TYPO.xs)
+      .attr('fill', 'var(--text-secondary)'));
 
-  // Today marker (drawn over all strips)
-  renderTodayMarker(g, x, countries.length * (STRIP_HEIGHT + STRIP_GAP));
+  // Today marker — use same normalized local-time today as the domain calculation
+  const tx = x(today);
+  g.append('line')
+    .attr('x1', tx).attr('x2', tx)
+    .attr('y1', 0).attr('y2', countries.length * (STRIP_HEIGHT + STRIP_GAP))
+    .attr('stroke', blue(0.4))
+    .attr('stroke-dasharray', '4,3')
+    .attr('stroke-width', 1);
+  g.append('text')
+    .attr('x', tx + 4)
+    .attr('y', -4)
+    .attr('font-family', 'var(--font)')
+    .attr('font-size', TYPO.xs)
+    .attr('fill', blue(0.7))
+    .text('Today');
 }
