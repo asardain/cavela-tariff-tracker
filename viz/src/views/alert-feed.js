@@ -127,7 +127,6 @@ export function mount(container, allClaims, options = {}) {
       .join(
         enter => {
           const tr = enter.append('tr').attr('class', 'alert-row');
-          tr.classed('anomaly', d => d.is_anomaly);
 
           // Date
           tr.append('td').attr('class', 'alert-date')

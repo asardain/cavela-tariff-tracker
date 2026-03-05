@@ -406,9 +406,6 @@ body {
 #feed-tooltip a { color: #888; text-decoration: none; }
 #feed-tooltip a:hover { color: #fff; }
 
-/* Anomaly row */
-.alert-row.anomaly td { border-left: 2px solid rgba(220, 38, 38, 0.4); padding-left: 10px; }
-.alert-row.anomaly td:first-child { padding-left: 0; border-left: none; }
 
 /* SVG text styles */
 .axis-label {
