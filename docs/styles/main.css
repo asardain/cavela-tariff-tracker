@@ -301,6 +301,13 @@ body {
   white-space: nowrap;
 }
 
+/* Country column */
+.alert-country-col {
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
 /* Certainty dots */
 .certainty-dots { letter-spacing: 2px; }
 

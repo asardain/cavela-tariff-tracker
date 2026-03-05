@@ -12,6 +12,22 @@ import { blue, TYPO, showTooltip, hideTooltip, claimTooltipHtml } from '../marks
 
 const CERTAINTY_BAR_MAX = 70; // px at level 7
 
+const FLAG = {
+  'China': '🇨🇳', 'Vietnam': '🇻🇳', 'Mexico': '🇲🇽', 'Bangladesh': '🇧🇩',
+  'India': '🇮🇳', 'Cambodia': '🇰🇭', 'Indonesia': '🇮🇩', 'Thailand': '🇹🇭',
+  'Sri Lanka': '🇱🇰', 'Pakistan': '🇵🇰', 'Turkey': '🇹🇷', 'Brazil': '🇧🇷',
+  'South Korea': '🇰🇷', 'Taiwan': '🇹🇼', 'Japan': '🇯🇵', 'Germany': '🇩🇪',
+  'Canada': '🇨🇦', 'Malaysia': '🇲🇾', 'Philippines': '🇵🇭', 'Ethiopia': '🇪🇹',
+  'Honduras': '🇭🇳', 'Guatemala': '🇬🇹', 'El Salvador': '🇸🇻',
+  'EU': '🇪🇺', 'European Union': '🇪🇺', 'United Kingdom': '🇬🇧', 'UK': '🇬🇧',
+};
+
+function countryDisplay(country) {
+  if (!country || country === 'Unknown') return 'Multiple';
+  const flag = FLAG[country] || '';
+  return flag ? `${flag}\u00a0${country}` : country;
+}
+
 function pillClass(tariff_action) {
   if (['new_tariff', 'tariff_increase'].includes(tariff_action)) return 'pill-red';
   if (['tariff_removal', 'tariff_pause'].includes(tariff_action)) return 'pill-green';
@@ -110,6 +126,7 @@ export function mount(container, allClaims, options = {}) {
   const thead = table.append('thead').append('tr');
   thead.append('th').text('Date');
   thead.append('th').text('Subject / Claim');
+  thead.append('th').text('Country');
   thead.append('th').text('Action');
   thead.append('th').text('Certainty');
 
@@ -134,6 +151,10 @@ export function mount(container, allClaims, options = {}) {
           const subjectTd = tr.append('td');
           subjectTd.append('div').attr('class', 'alert-subject').text(d => d.subject || d.country);
           subjectTd.append('div').attr('class', 'alert-claim-detail').text(d => d.claim_text);
+
+          // Country
+          tr.append('td').attr('class', 'alert-country-col')
+            .text(d => countryDisplay(d.country));
 
           // Action badge
           tr.append('td').append('span')
