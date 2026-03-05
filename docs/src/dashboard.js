@@ -9,7 +9,6 @@ import { loadAllAvailableData } from './data.js';
 import { mount as mountAlertFeed } from './views/alert-feed.js';
 import { mount as mountRateMatrix } from './views/rate-matrix.js';
 import { mount as mountCountryTimeline } from './views/country-timeline.js';
-import { mount as mountSourcingCompare } from './views/sourcing-compare.js';
 
 // ---------------------------------------------------------------------------
 // View registry
@@ -19,7 +18,6 @@ const VIEWS = [
   { id: 'alerts',   label: 'Latest News',    mount: mountAlertFeed },
   { id: 'rates',    label: 'Current Rates',  mount: mountRateMatrix },
   { id: 'timeline', label: 'History',        mount: mountCountryTimeline },
-  { id: 'sourcing', label: 'Alternatives',   mount: mountSourcingCompare },
 ];
 
 // ---------------------------------------------------------------------------
@@ -35,7 +33,7 @@ function buildShell() {
   header.className = 'app-header';
   header.innerHTML = `
     <div>
-      <div class="app-title">Cavela <span class="brand-accent">Tariff</span> Tracker</div>
+      <div class="app-title">Cavela <span class="brand-accent">US Tariff</span> Tracker</div>
       <div class="app-subtitle">Live tariff intelligence for sourcing teams</div>
     </div>
     <div id="data-status" style="font-size:11px;color:var(--text-secondary);">Loading data...</div>
