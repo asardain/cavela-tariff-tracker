@@ -11,6 +11,7 @@
   --text-primary: #ffffff;
   --text-secondary: #555;
   --text-muted:   #333;
+  --accent:       #3535F0;
   --text-body:    #ccc;
   --filter-bg:    rgba(255,255,255,0.04);
   --filter-border: rgba(255,255,255,0.08);
@@ -139,8 +140,11 @@ body {
 
 .tab-btn.active {
   color: #ffffff;
-  border-bottom-color: #ffffff;
+  border-bottom-color: var(--accent);
 }
+
+/* Brand accent */
+.brand-accent { color: var(--accent); }
 
 /* View container */
 .view-container {

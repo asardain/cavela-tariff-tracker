@@ -37,7 +37,7 @@ function buildShell() {
   header.className = 'app-header';
   header.innerHTML = `
     <div>
-      <div class="app-title">Cavela Tariff Tracker</div>
+      <div class="app-title">Cavela <span class="brand-accent">Tariff</span> Tracker</div>
       <div class="app-subtitle">Live tariff intelligence for sourcing teams</div>
     </div>
     <div id="data-status" style="font-size:11px;color:var(--text-secondary);">Loading data...</div>
