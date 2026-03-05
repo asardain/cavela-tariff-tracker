@@ -199,8 +199,7 @@ export function keepLatest(groups) {
  */
 export function buildRateMatrix(claims) {
   const relevant = claims.filter(c =>
-    ['new_tariff', 'tariff_increase', 'tariff_removal', 'tariff_pause'].includes(c.tariff_action)
-    && c.rate_pct !== null
+    c.rate_pct !== null && c.country !== 'Unknown'
   );
   const groups = groupBy(relevant, c => `${c.country}|||${c.category}`);
   return [...groups.entries()].map(([, groupClaims]) => {

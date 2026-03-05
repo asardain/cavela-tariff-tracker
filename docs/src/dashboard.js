@@ -9,7 +9,6 @@ import { loadAllAvailableData } from './data.js';
 import { mount as mountAlertFeed } from './views/alert-feed.js';
 import { mount as mountRateMatrix } from './views/rate-matrix.js';
 import { mount as mountCountryTimeline } from './views/country-timeline.js';
-import { mount as mountHorizonScanner } from './views/horizon-scanner.js';
 import { mount as mountSourcingCompare } from './views/sourcing-compare.js';
 
 // ---------------------------------------------------------------------------
@@ -17,10 +16,9 @@ import { mount as mountSourcingCompare } from './views/sourcing-compare.js';
 // ---------------------------------------------------------------------------
 
 const VIEWS = [
-  { id: 'alerts',   label: 'This Week',      mount: mountAlertFeed },
+  { id: 'alerts',   label: 'Latest News',    mount: mountAlertFeed },
   { id: 'rates',    label: 'Current Rates',  mount: mountRateMatrix },
   { id: 'timeline', label: 'History',        mount: mountCountryTimeline },
-  { id: 'horizon',  label: 'Horizon',        mount: mountHorizonScanner },
   { id: 'sourcing', label: 'Alternatives',   mount: mountSourcingCompare },
 ];
 
