@@ -53,7 +53,9 @@ export function mount(container, allClaims, options = {}) {
     return;
   }
 
-  const { byCountry, monthCounts } = buildCountryTimeline(allClaims);
+  const { byCountry, monthCounts } = buildCountryTimeline(
+    allClaims.filter(c => !c.research_claim)
+  );
   const countries = [...byCountry.keys()];
 
   if (countries.length === 0) {
@@ -66,18 +68,21 @@ export function mount(container, allClaims, options = {}) {
   const innerW = containerWidth - MARGIN.left - MARGIN.right;
   const totalH = countries.length * (STRIP_HEIGHT + STRIP_GAP) + MARGIN.top + MARGIN.bottom + 32;
 
-  // Time domain: all published dates
-  const allDates = allClaims.map(c => c.published_ts).filter(Boolean);
-  const [minDate, maxDate] = d3.extent(allDates);
-
   // Normalize today to local time (midnight) for consistent today marker + domain
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
+  // Fixed 3-month window ending today
+  const threeMonthsAgo = new Date(today);
+  threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
+
   const xDomain = [
-    d3.timeMonth.floor(minDate || new Date(today.getTime() - 90 * 864e5)),
-    d3.timeMonth.ceil(maxDate || today),
+    d3.timeMonth.floor(threeMonthsAgo),
+    d3.timeMonth.ceil(today),
   ];
+
+  // Filter claims to the 3-month window
+  const windowStart = xDomain[0];
 
   const x = d3.scaleTime().domain(xDomain).range([0, innerW]);
 
@@ -131,7 +136,7 @@ export function mount(container, allClaims, options = {}) {
     const DOT_R = 5;
     const dotY = STRIP_HEIGHT / 2;
     strip.selectAll('.event-dot')
-      .data(claims)
+      .data(claims.filter(d => d.published_ts >= windowStart))
       .join('circle')
       .attr('class', 'event-dot')
       .attr('cx', d => x(d.published_ts))
