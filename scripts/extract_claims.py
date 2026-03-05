@@ -212,6 +212,7 @@ def enrich_claim(raw_claim: dict, article: dict, extracted_date: str) -> dict:
         "certainty_label": "SPECULATION",  # placeholder
         "certainty_rationale": "Pending classification.",  # placeholder
         "pedigree": pedigree,
+        "feed_exclude": article.get("feed_exclude", False),
     }
 
 

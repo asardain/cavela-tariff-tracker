@@ -315,6 +315,54 @@ export function buildHorizonData(claims) {
   return { scheduled: stacked, unscheduled, today, domainStart: past30, domainEnd: future180 };
 }
 
+// Patterns that identify routine antidumping/countervailing duty proceedings
+// (administrative reviews, five-year reviews, preliminary/final determinations
+// of existing investigations). These are bureaucratic proceedings, not policy news.
+const ROUTINE_PROCEEDING_PATTERNS = [
+  /administrative review/i,
+  /five.year review/i,
+  /sunset review/i,
+  /preliminary results/i,
+  /final results/i,
+  /initiation of antidumping/i,
+  /initiation of countervailing/i,
+  /countervailing duty order/i,
+  /antidumping duty order/i,
+  /scope ruling/i,
+  /circumvention inquiry/i,
+  /changed circumstances/i,
+  /new shipper review/i,
+  // Additional patterns for determinations and investigations
+  /affirmative countervailing duty determination/i,
+  /affirmative antidumping.*(determination|finding)/i,
+  /less than fair value/i,
+  /institution of .*(antidumping|countervailing)/i,
+  /scheduling of the final phase/i,
+  /supplemental schedule/i,
+  /extension of the deadline for determining the adequacy/i,
+  /determination of covered merchandise/i,
+  /affirmative determination of circumvention/i,
+  /de minimis treatment/i,
+  /information collection/i,
+  // DOC determination notices that are routine proceedings
+  /department of commerce (determined|preliminarily determined|preliminarily determines|finds) that .*(countervailable subsidies|sold .* at (less than|prices below)|antidumping)/i,
+  /commerce preliminarily (finds|determines)/i,
+  /at less than normal value/i,
+  /preliminary results and (partial )?rescission/i,
+];
+
+/**
+ * Returns true if a claim is a routine antidumping/CVD proceeding that
+ * should be excluded from the news feed.
+ */
+function isRoutineProceeding(claim) {
+  // Explicit flag set during extraction (new pipeline)
+  if (claim.feed_exclude) return true;
+  // Content-based filter for existing data without the flag
+  const text = (claim.claim_text || '') + ' ' + (claim.subject || '');
+  return ROUTINE_PROCEEDING_PATTERNS.some(re => re.test(text));
+}
+
 /**
  * Build alert feed data for the current week.
  */
@@ -323,7 +371,7 @@ export function buildAlertFeed(claims, weeks = 2) {
   cutoff.setDate(cutoff.getDate() - weeks * 7);
 
   const recent = claims
-    .filter(c => c.published_ts >= cutoff)
+    .filter(c => c.published_ts >= cutoff && !c.research_claim && !isRoutineProceeding(c))
     .sort((a, b) => b.published_ts - a.published_ts);
 
   // Compute weekly baseline per country (90-day window)

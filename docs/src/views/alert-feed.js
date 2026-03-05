@@ -124,7 +124,7 @@ export function mount(container, allClaims, options = {}) {
   const tableWrap = el.append('div').style('overflow-x', 'auto');
   const table = tableWrap.append('table').attr('class', 'alert-feed-table');
   const thead = table.append('thead').append('tr');
-  thead.append('th').text('Date');
+  thead.append('th').text('Published');
   thead.append('th').text('Subject / Claim');
   thead.append('th').text('Country');
   thead.append('th').text('Action');
@@ -185,8 +185,11 @@ export function mount(container, allClaims, options = {}) {
               ? `<a href="${d.source_url}" target="_blank">${d.source_name}</a>`
               : d.source_name)
           : '—';
-        const dateLine = d.effective_date
-          ? `<div style="margin-top:6px;color:var(--text-secondary);font-size:12px">Effective: ${d.effective_date}</div>`
+        const publishedFormatted = d.published_ts
+          ? d.published_ts.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+          : '—';
+        const effectiveLine = d.effective_date
+          ? `<div style="margin-top:4px;color:var(--text-secondary);font-size:12px">Effective date: ${d.effective_date}</div>`
           : '';
         tooltip
           .style('display', 'block')
@@ -195,7 +198,8 @@ export function mount(container, allClaims, options = {}) {
           .html(`
             <div style="font-weight:500;margin-bottom:4px;color:var(--text-body)">${d.claim_text || '—'}</div>
             <div style="color:var(--text-secondary);font-size:12px">Source: ${sourceLine}</div>
-            ${dateLine}
+            <div style="margin-top:4px;color:var(--text-secondary);font-size:12px">Published: ${publishedFormatted}</div>
+            ${effectiveLine}
           `);
       }, 300);
     }).on('mouseleave', function() {

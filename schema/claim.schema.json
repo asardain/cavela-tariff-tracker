@@ -106,6 +106,10 @@
       "maxLength": 500,
       "description": "One sentence explaining why this certainty level was assigned"
     },
+    "feed_exclude": {
+      "type": "boolean",
+      "description": "If true, exclude this claim from the news feed (used for routine bureaucratic proceedings such as antidumping administrative reviews)"
+    },
     "pedigree": {
       "type": "object",
       "required": [
