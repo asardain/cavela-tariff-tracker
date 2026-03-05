@@ -1,0 +1,571 @@
+[
+  {
+    "country": "China",
+    "category": "Apparel",
+    "rate_pct": 35,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 301 List 3/4A", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "China apparel faces 25% Section 301 tariff (List 3/4A, USTR) plus the 10% Section 122 global surcharge effective Feb 24, 2026 = 35% total.",
+    "source_name": "USTR / White House",
+    "source_url": "https://ustr.gov/sites/default/files/enforcement/301Investigations/List3FinalNotice.pdf",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Electronics",
+    "rate_pct": 35,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 301 List 3/4A", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "China electronics face 25% Section 301 tariff plus the 10% Section 122 global surcharge (effective Feb 24, 2026) = 35% total. Advanced semiconductors may face an additional 25% Section 232.",
+    "source_name": "USTR / White House",
+    "source_url": "https://ustr.gov/sites/default/files/enforcement/301Investigations/2020_USTR_Report_China's_Acts.pdf",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Steel & Metals",
+    "rate_pct": 50,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel/aluminum", "rate": 50}
+    ],
+    "claim_text": "China steel and aluminum face 50% Section 232 tariffs. Section 232 goods are explicitly excluded from the Section 122 surcharge.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Solar & Energy",
+    "rate_pct": 60,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Biden Section 301 solar", "rate": 50},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "China solar panels face 50% Biden-era Section 301 tariff plus 10% Section 122 global surcharge = 60% total.",
+    "source_name": "White House USTR",
+    "source_url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2024/may/biden-harris-administration-announces-strategic-investments-and-new-tariffs-protect-american-workers",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Auto & Parts",
+    "rate_pct": 50,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 232 autos", "rate": 25},
+      {"label": "Section 301", "rate": 25}
+    ],
+    "claim_text": "Chinese autos face 25% Section 232 tariff plus 25% Section 301 tariff = 50% total. Section 232 goods excluded from Section 122 surcharge.",
+    "source_name": "White House / USTR",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Agriculture",
+    "rate_pct": 35,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 301", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "Chinese agricultural goods face 25% Section 301 tariff plus 10% Section 122 surcharge = 35% total.",
+    "source_name": "USTR",
+    "source_url": "https://ustr.gov/sites/default/files/enforcement/301Investigations/2020_USTR_Report_China's_Acts.pdf",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Chemicals",
+    "rate_pct": 35,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 301", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "Chinese chemicals face 25% Section 301 tariff plus 10% Section 122 surcharge = 35% total.",
+    "source_name": "USTR",
+    "source_url": "https://ustr.gov/sites/default/files/enforcement/301Investigations/2020_USTR_Report_China's_Acts.pdf",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "China",
+    "category": "Machinery",
+    "rate_pct": 35,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 301", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "Chinese machinery faces 25% Section 301 tariff plus 10% Section 122 surcharge = 35% total.",
+    "source_name": "USTR",
+    "source_url": "https://ustr.gov/sites/default/files/enforcement/301Investigations/2020_USTR_Report_China's_Acts.pdf",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Vietnam",
+    "category": "Apparel",
+    "rate_pct": 20,
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "layers": [
+      {"label": "Bilateral tariff (reduced from 46%)", "rate": 20}
+    ],
+    "claim_text": "Vietnam faces a 20% tariff on apparel and general imports, reduced from the original 46% reciprocal rate announced in July 2025.",
+    "source_name": "Tax Foundation",
+    "source_url": "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Vietnam",
+    "category": "Electronics",
+    "rate_pct": 20,
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "layers": [
+      {"label": "Bilateral tariff (reduced from 46%)", "rate": 20}
+    ],
+    "claim_text": "Vietnam electronics face a 20% tariff, reduced from the original 46% reciprocal rate announced in July 2025.",
+    "source_name": "Tax Foundation",
+    "source_url": "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Vietnam",
+    "category": "Machinery",
+    "rate_pct": 20,
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "layers": [
+      {"label": "Bilateral tariff (reduced from 46%)", "rate": 20}
+    ],
+    "claim_text": "Vietnam machinery faces a 20% tariff, reduced from the original 46% reciprocal rate.",
+    "source_name": "Tax Foundation",
+    "source_url": "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Mexico",
+    "category": "Apparel",
+    "rate_pct": 25,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Non-USMCA-compliant goods tariff", "rate": 25}
+    ],
+    "claim_text": "Mexico non-USMCA-compliant apparel faces 25% tariff (effective March 4, 2025). USMCA-compliant imports remain exempt.",
+    "source_name": "Pillsbury Law",
+    "source_url": "https://www.pillsburylaw.com/en/news-and-insights/tariffs-usmca-compliant.html",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Mexico",
+    "category": "Auto & Parts",
+    "rate_pct": 25,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 232 autos / non-USMCA tariff", "rate": 25}
+    ],
+    "claim_text": "Mexican non-USMCA-compliant auto imports face 25% tariff. USMCA-compliant auto parts remain exempt.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Mexico",
+    "category": "Steel & Metals",
+    "rate_pct": 50,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel/aluminum", "rate": 50}
+    ],
+    "claim_text": "Mexican steel and aluminum face 50% Section 232 tariffs. Section 232 goods are excluded from Section 122 surcharge.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Bangladesh",
+    "category": "Apparel",
+    "rate_pct": 12,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "MFN standard tariff", "rate": 12}
+    ],
+    "claim_text": "Bangladesh apparel faces standard MFN tariff rates averaging 12%. The 37% reciprocal tariff announced in April 2025 was paused and replaced by the 10% Section 122 baseline; however Bangladesh negotiated an exemption from Section 122 as part of its AGOA-adjacent arrangement.",
+    "source_name": "USTR Tariff Schedule",
+    "source_url": "https://hts.usitc.gov/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "India",
+    "category": "Apparel",
+    "rate_pct": 12,
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "layers": [
+      {"label": "MFN standard tariff", "rate": 12}
+    ],
+    "claim_text": "India apparel faces standard MFN tariff of ~12%. The Feb 6 2026 bilateral deal set India's tariff at 18% for most goods but apparel was not specifically elevated above MFN levels in available data.",
+    "source_name": "USTR",
+    "source_url": "https://ustr.gov/countries-regions/south-central-asia/india",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "India",
+    "category": "Steel & Metals",
+    "rate_pct": 25,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel", "rate": 25}
+    ],
+    "claim_text": "Indian steel imports subject to 25% Section 232 tariffs; no quota exemption in place.",
+    "source_name": "Federal Register Section 232",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "India",
+    "category": "Electronics",
+    "rate_pct": 18,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "US-India bilateral deal tariff", "rate": 18}
+    ],
+    "claim_text": "India electronics face 18% tariff per the Feb 6, 2026 US-India interim bilateral trade deal, reduced from the 26% reciprocal tariff announced in April 2025.",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/02/02/trump-india-trade-deal-tariffs.html",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Cambodia",
+    "category": "Apparel",
+    "rate_pct": 49,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Reciprocal tariff (April 2025 EO)", "rate": 49}
+    ],
+    "claim_text": "Cambodia apparel faces 49% reciprocal tariff per April 2025 executive order. This rate remains in effect as Cambodia did not receive a pause extension.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and-persistent-annual-united-states-goods-trade-deficits/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Indonesia",
+    "category": "Apparel",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 baseline (reciprocal paused)", "rate": 10}
+    ],
+    "claim_text": "Indonesia apparel currently faces the 10% Section 122 baseline tariff. The 32% reciprocal tariff from April 2025 EO was paused and then superseded by Section 122.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Indonesia",
+    "category": "Electronics",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 baseline (reciprocal paused)", "rate": 10}
+    ],
+    "claim_text": "Indonesia electronics currently face the 10% Section 122 baseline tariff. The 32% reciprocal tariff from April 2025 was paused then superseded by Section 122.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Thailand",
+    "category": "Apparel",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 baseline (reciprocal paused)", "rate": 10}
+    ],
+    "claim_text": "Thailand apparel faces 10% Section 122 baseline tariff. The 36% reciprocal tariff from April 2025 EO was paused then superseded by Section 122.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Thailand",
+    "category": "Electronics",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 baseline (reciprocal paused)", "rate": 10}
+    ],
+    "claim_text": "Thailand electronics face 10% Section 122 baseline tariff. The 36% reciprocal tariff was paused then superseded by Section 122.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Thailand",
+    "category": "Machinery",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 baseline (reciprocal paused)", "rate": 10}
+    ],
+    "claim_text": "Thailand machinery faces 10% Section 122 baseline tariff. The 36% reciprocal tariff was paused then superseded by Section 122.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "EU",
+    "category": "Steel & Metals",
+    "rate_pct": 25,
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "layers": [
+      {"label": "Section 232 steel/aluminum", "rate": 25}
+    ],
+    "claim_text": "EU steel and aluminum face 25% Section 232 tariffs (reinstated after quota suspension lifted). Section 232 goods excluded from Section 122 surcharge.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2023/06/01/2023-11470/adjusting-imports-of-steel-and-aluminum",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "EU",
+    "category": "Auto & Parts",
+    "rate_pct": 35,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 232 autos", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "EU autos face 25% Section 232 tariff plus 10% Section 122 surcharge on non-Section-232 components = 35% effective rate.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "EU",
+    "category": "Machinery",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "EU machinery faces 10% Section 122 surcharge (effective Feb 24, 2026). The 20% reciprocal tariff was invalidated by SCOTUS ruling on IEEPA.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "EU",
+    "category": "Chemicals",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "EU chemicals face 10% Section 122 surcharge (effective Feb 24, 2026). The 20% reciprocal tariff was invalidated by SCOTUS IEEPA ruling.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Japan",
+    "category": "Steel & Metals",
+    "rate_pct": 25,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel (above TRQ)", "rate": 25}
+    ],
+    "claim_text": "Japanese steel subject to 25% Section 232 tariff above tariff-rate quota levels. Section 232 goods excluded from Section 122.",
+    "source_name": "Federal Register Section 232",
+    "source_url": "https://www.federalregister.gov/documents/2022/04/04/2022-07026/adjusting-imports-of-steel-into-the-united-states-establishing-a-tariff-rate-quota-for-certain",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Japan",
+    "category": "Auto & Parts",
+    "rate_pct": 35,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 232 autos", "rate": 25},
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "Japanese autos face 25% Section 232 tariff. Other Japanese goods subject to 10% Section 122 surcharge. Auto sector effective rate ~35%.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Japan",
+    "category": "Electronics",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "Japanese electronics face 10% Section 122 surcharge (effective Feb 24, 2026). The 24% reciprocal tariff from April 2025 EO was paused then invalidated by SCOTUS.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "South Korea",
+    "category": "Auto & Parts",
+    "rate_pct": 25,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 232 autos", "rate": 25}
+    ],
+    "claim_text": "South Korean autos face 25% Section 232 tariff (executive order, April 2025). Section 232 goods excluded from Section 122 surcharge.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-automobile-parts-into-the-united-states/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "South Korea",
+    "category": "Steel & Metals",
+    "rate_pct": 25,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel", "rate": 25}
+    ],
+    "claim_text": "South Korean steel subject to 25% Section 232 tariff. Section 232 goods excluded from Section 122.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "South Korea",
+    "category": "Electronics",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "South Korean electronics face 10% Section 122 surcharge (effective Feb 24, 2026). IEEPA-based reciprocal tariffs struck down by SCOTUS.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Canada",
+    "category": "Apparel",
+    "rate_pct": 25,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Non-USMCA goods tariff", "rate": 25}
+    ],
+    "claim_text": "Canada non-USMCA-compliant apparel faces 35% tariff (effective March 4, 2025). USMCA-compliant imports exempt from both that tariff and Section 122.",
+    "source_name": "Trade Compliance Resource Hub",
+    "source_url": "https://www.tradecomplianceresourcehub.com/2026/02/24/trump-2-0-tariff-tracker/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Canada",
+    "category": "Steel & Metals",
+    "rate_pct": 50,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel/aluminum", "rate": 50}
+    ],
+    "claim_text": "Canadian steel and aluminum face 50% Section 232 tariffs. Section 232 goods excluded from Section 122 surcharge.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Canada",
+    "category": "Auto & Parts",
+    "rate_pct": 25,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 232 autos (non-USMCA)", "rate": 25}
+    ],
+    "claim_text": "Canadian non-USMCA-compliant autos face 25% Section 232 tariff. USMCA-compliant auto parts currently exempt. Section 232 excluded from Section 122.",
+    "source_name": "Trade Compliance Resource Hub",
+    "source_url": "https://www.tradecomplianceresourcehub.com/2026/02/24/trump-2-0-tariff-tracker/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Taiwan",
+    "category": "Electronics",
+    "rate_pct": 10,
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "layers": [
+      {"label": "Section 122 surcharge", "rate": 10}
+    ],
+    "claim_text": "Taiwan electronics face 10% Section 122 surcharge. Advanced semiconductors from Taiwan may face an additional 25% Section 232 (effective Jan 15, 2026) for specific targeted products.",
+    "source_name": "White House",
+    "source_url": "https://www.whitehouse.gov/fact-sheets/2026/02/fact-sheet-president-donald-j-trump-imposes-a-temporary-import-duty-to-address-fundamental-international-payment-problems/",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Brazil",
+    "category": "Steel & Metals",
+    "rate_pct": 25,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel", "rate": 25}
+    ],
+    "claim_text": "Brazilian steel subject to 25% Section 232 tariff. Section 232 goods excluded from Section 122.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  },
+  {
+    "country": "Turkey",
+    "category": "Steel & Metals",
+    "rate_pct": 50,
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "layers": [
+      {"label": "Section 232 steel (elevated rate)", "rate": 50}
+    ],
+    "claim_text": "Turkish steel subject to elevated 50% Section 232 tariff. Turkey was subject to a higher rate due to prior national security findings.",
+    "source_name": "Federal Register / Commerce Dept",
+    "source_url": "https://www.federalregister.gov/documents/2018/03/22/2018-06157/adjusting-imports-of-steel-into-the-united-states",
+    "published_date": "2026-03-05T00:00:00+00:00"
+  }
+]

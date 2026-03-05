@@ -281,24 +281,6 @@ export function renderCells(container, data, scales, opts = {}) {
     .attr('r', d => rScale(d.certainty_level))
     .attr('fill', d => blue(0.9));
 
-  // Trend arrow (top-right corner)
-  groups.selectAll('.cell-trend')
-    .data(d => [d])
-    .join('text')
-    .attr('class', 'cell-trend')
-    .attr('x', cellW - 4)
-    .attr('y', 10)
-    .attr('text-anchor', 'end')
-    .attr('font-size', 9)
-    .attr('font-weight', '700')
-    .attr('fill', d =>
-      d.trend === 'up' ? '#dc2626' :
-      d.trend === 'down' ? '#16a34a' : '#6b7280'
-    )
-    .text(d =>
-      d.trend === 'up' ? '↑' : d.trend === 'down' ? '↓' : '—'
-    );
-
   // Hover / click
   if (opts.onHover) {
     groups.style('cursor', 'pointer')

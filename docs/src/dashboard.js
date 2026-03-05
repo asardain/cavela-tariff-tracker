@@ -82,19 +82,19 @@ function activateView(viewId, allClaims, mountedViews) {
 
   // Mount view if not yet mounted
   if (!mountedViews.has(viewId)) {
+    mountedViews.add(viewId); // mark immediately to prevent double-mount
     const view = VIEWS.find(v => v.id === viewId);
     if (view) {
       const panel = document.getElementById(`panel-${viewId}`);
       panel.innerHTML = '<div class="loading">Rendering...</div>';
-      requestAnimationFrame(() => {
+      requestAnimationFrame(async () => {
         panel.innerHTML = '';
         try {
-          view.mount(panel, allClaims);
+          await view.mount(panel, allClaims);
         } catch (err) {
           panel.innerHTML = `<div class="empty-state"><p>Render error</p><small>${err.message}</small></div>`;
           console.error(`[dashboard] Error mounting view "${viewId}":`, err);
         }
-        mountedViews.add(viewId);
       });
     }
   }

@@ -108,6 +108,27 @@ export async function loadAllAvailableData() {
   return loadDailyFiles(start, end);
 }
 
+/**
+ * Load the curated current-rates matrix (pre-calculated totals per country/sector).
+ * Falls back to empty array if file not found.
+ * @returns {Promise<object[]>}
+ */
+export async function loadCurrentRates() {
+  try {
+    const res = await fetch('data/current-rates.json');
+    if (!res.ok) return [];
+    const data = await res.json();
+    if (!Array.isArray(data)) return [];
+    return data.map(row => ({
+      ...row,
+      published_ts: row.published_date ? new Date(row.published_date) : new Date(),
+      action_label: ACTION_LABELS[row.tariff_action] || row.tariff_action || 'Current Rate',
+    }));
+  } catch (_) {
+    return [];
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Parsing / enrichment (pure functions — no side effects)
 // ---------------------------------------------------------------------------

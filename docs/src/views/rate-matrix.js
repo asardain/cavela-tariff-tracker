@@ -7,7 +7,7 @@
  * export mount(container, data, options?)
  */
 
-import { buildRateMatrix, CATEGORIES } from '../data.js';
+import { loadCurrentRates, CATEGORIES } from '../data.js';
 import {
   categoryBand, countryBand, renderCells, renderAnnotations, renderBandAxis,
   showTooltip, claimTooltipHtml, TYPO, blue,
@@ -16,21 +16,16 @@ import {
 const MARGIN = { top: 80, right: 40, bottom: 120, left: 120 };
 const CELL_MIN = 44;
 
-export function mount(container, allClaims, options = {}) {
+export async function mount(container, allClaims, options = {}) {
   const el = d3.select(container);
   el.html('');
 
-  if (!allClaims || allClaims.length === 0) {
-    el.append('div').attr('class', 'empty-state')
-      .html('<p>No data available yet.</p><small>Run the pipeline to generate daily claim files.</small>');
-    return;
-  }
-
-  const matrix = buildRateMatrix(allClaims);
+  // Load the curated current-rates data (pre-calculated totals per country/sector)
+  const matrix = await loadCurrentRates();
 
   if (matrix.length === 0) {
     el.append('div').attr('class', 'empty-state')
-      .html('<p>No rate data found.</p><small>Claims need tariff percentages to populate this view.</small>');
+      .html('<p>No rate data found.</p><small>Current rates data file could not be loaded.</small>');
     return;
   }
 
