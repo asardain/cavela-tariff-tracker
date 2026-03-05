@@ -200,11 +200,11 @@ export function renderBars(container, data, scales, opts = {}) {
       .attr('dy', '0.35em')
       .attr('font-size', TYPO.sm)
       .attr('fill', d =>
-        d.trend === 'up' ? blue(0.8) :
-        d.trend === 'down' ? blue(0.4) : 'var(--text-tertiary)'
+        d.trend === 'up' ? '#dc2626' :
+        d.trend === 'down' ? '#16a34a' : '#6b7280'
       )
       .text(d =>
-        d.trend === 'up' ? '↑' : d.trend === 'down' ? '↓' : '→'
+        d.trend === 'up' ? '↑' : d.trend === 'down' ? '↓' : '—'
       );
   }
 
@@ -280,6 +280,24 @@ export function renderCells(container, data, scales, opts = {}) {
     .attr('cy', cellH - 8)
     .attr('r', d => rScale(d.certainty_level))
     .attr('fill', d => blue(0.9));
+
+  // Trend arrow (top-right corner)
+  groups.selectAll('.cell-trend')
+    .data(d => [d])
+    .join('text')
+    .attr('class', 'cell-trend')
+    .attr('x', cellW - 4)
+    .attr('y', 10)
+    .attr('text-anchor', 'end')
+    .attr('font-size', 9)
+    .attr('font-weight', '700')
+    .attr('fill', d =>
+      d.trend === 'up' ? '#dc2626' :
+      d.trend === 'down' ? '#16a34a' : '#6b7280'
+    )
+    .text(d =>
+      d.trend === 'up' ? '↑' : d.trend === 'down' ? '↓' : '—'
+    );
 
   // Hover / click
   if (opts.onHover) {

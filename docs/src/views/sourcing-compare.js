@@ -147,6 +147,22 @@ export function mount(container, allClaims, options = {}) {
       },
     });
 
+    // Trend column header
+    g.selectAll('.trend-header').remove();
+    const trendLabelX = data.length > 0
+      ? x(d3.max(data, d => d.rate_pct ?? 0)) + (data[0].rate_pct !== null ? 36 : 16)
+      : 40;
+    g.append('text')
+      .attr('class', 'trend-header')
+      .attr('x', trendLabelX)
+      .attr('y', -12)
+      .attr('text-anchor', 'middle')
+      .attr('font-family', 'var(--font)')
+      .attr('font-size', TYPO.xs)
+      .attr('font-weight', '500')
+      .attr('fill', 'var(--text-secondary)')
+      .text('Trend');
+
     // Claim count (right of bars)
     g.selectAll('.claim-count')
       .data(data)

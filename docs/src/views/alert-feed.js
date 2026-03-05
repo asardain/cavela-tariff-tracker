@@ -8,7 +8,7 @@
  */
 
 import { buildAlertFeed, ACTION_LABELS, CATEGORIES, uniqueValues } from '../data.js';
-import { blue, TYPO, renderSparkline, showTooltip, hideTooltip, claimTooltipHtml } from '../marks.js';
+import { blue, TYPO, showTooltip, hideTooltip, claimTooltipHtml } from '../marks.js';
 
 const CERTAINTY_BAR_MAX = 70; // px at level 7
 
@@ -22,7 +22,7 @@ export function mount(container, allClaims, options = {}) {
     return;
   }
 
-  const { claims, sparklines } = buildAlertFeed(allClaims, options.weeks || 2);
+  const { claims } = buildAlertFeed(allClaims, options.weeks || 2);
 
   // Filter state
   let activeCountry = 'All';
@@ -83,7 +83,6 @@ export function mount(container, allClaims, options = {}) {
   thead.append('th').text('Subject / Claim');
   thead.append('th').text('Action');
   thead.append('th').text('Certainty');
-  thead.append('th').text('Activity (8w)');
 
   const tbody = table.append('tbody');
 
@@ -121,19 +120,6 @@ export function mount(container, allClaims, options = {}) {
             .style('opacity', d => 0.3 + (d.certainty_level / 7) * 0.7);
           barWrap.append('span').attr('class', 'certainty-label-text')
             .text(d => `${d.certainty_label} (${d.certainty_level})`);
-
-          // Sparkline
-          const sparkTd = tr.append('td');
-          tr.each(function(d) {
-            const series = sparklines.get(d.country);
-            if (!series || series.length < 2) return;
-            const svg = d3.select(this).select('td:last-child')
-              .append('svg')
-              .attr('width', 100)
-              .attr('height', 28);
-            const g = svg.append('g').attr('transform', 'translate(0, 4)');
-            renderSparkline(g, series, { width: 100, height: 20 });
-          });
 
           return tr;
         },

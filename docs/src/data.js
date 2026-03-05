@@ -203,19 +203,28 @@ export function buildRateMatrix(claims) {
     && c.rate_pct !== null
   );
   const groups = groupBy(relevant, c => `${c.country}|||${c.category}`);
-  return keepLatest(groups).map(c => ({
-    country: c.country,
-    category: c.category,
-    rate_pct: c.rate_pct,
-    certainty_level: c.certainty_level,
-    certainty_label: c.certainty_label,
-    claim_text: c.claim_text,
-    source_name: c.source_name,
-    published_ts: c.published_ts,
-    tariff_action: c.tariff_action,
-    action_label: c.action_label,
-    source_url: c.source_url,
-  }));
+  return [...groups.entries()].map(([, groupClaims]) => {
+    const latest = groupClaims.reduce((best, c) =>
+      (!best || c.published_ts > best.published_ts) ? c : best, null);
+    const rates = groupClaims
+      .filter(c => c.rate_pct !== null)
+      .sort((a, b) => a.published_ts - b.published_ts)
+      .map(c => c.rate_pct);
+    return {
+      country: latest.country,
+      category: latest.category,
+      rate_pct: latest.rate_pct,
+      certainty_level: latest.certainty_level,
+      certainty_label: latest.certainty_label,
+      claim_text: latest.claim_text,
+      source_name: latest.source_name,
+      published_ts: latest.published_ts,
+      tariff_action: latest.tariff_action,
+      action_label: latest.action_label,
+      source_url: latest.source_url,
+      trend: trendDirection(rates),
+    };
+  });
 }
 
 /**
