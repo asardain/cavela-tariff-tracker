@@ -60,8 +60,8 @@ export function mount(container, allClaims, options = {}) {
   const y = d3.scaleBand().domain(countries).range([0, height]).padding(0.12);
 
   // Annotations
-  renderAnnotations(svg, 'Tariff rates by country and product category',
-    'Cell opacity = tariff rate. Dot size = certainty level (1 = speculation, 7 = law).',
+  renderAnnotations(svg, 'Current confirmed tariff rates by country and product',
+    'Showing announced, executive order, and enacted tariffs only. Cell opacity = rate magnitude.',
     MARGIN.left, 28);
 
   // Column headers (categories)
@@ -102,23 +102,4 @@ export function mount(container, allClaims, options = {}) {
     },
   });
 
-  // Certainty legend (bottom)
-  const legend = svg.append('g')
-    .attr('transform', `translate(${MARGIN.left}, ${MARGIN.top + height + 24})`);
-  legend.append('text')
-    .attr('font-family', 'var(--font)')
-    .attr('font-size', TYPO.xs)
-    .attr('fill', 'var(--text-secondary)')
-    .text('Certainty:');
-  [1, 2, 3, 4, 5, 6, 7].forEach((level, i) => {
-    const lx = 70 + i * 64;
-    const rScale = d3.scaleSqrt().domain([1, 7]).range([2, 8]);
-    legend.append('circle').attr('cx', lx + 6).attr('cy', 6).attr('r', rScale(level)).attr('fill', blue(0.7));
-    legend.append('text')
-      .attr('x', lx + 16).attr('y', 10)
-      .attr('font-family', 'var(--font)')
-      .attr('font-size', TYPO.xs)
-      .attr('fill', 'var(--text-secondary)')
-      .text(['Spec.','Report','Prop.','Annc.','Exec.','Rule','Law'][level - 1]);
-  });
 }

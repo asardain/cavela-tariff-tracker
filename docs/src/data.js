@@ -215,7 +215,7 @@ export function keepLatest(groups) {
  */
 export function buildRateMatrix(claims) {
   const relevant = claims.filter(c =>
-    c.rate_pct !== null && c.country !== 'Unknown'
+    c.rate_pct !== null && c.country !== 'Unknown' && c.certainty_level >= 4
   );
   const groups = groupBy(relevant, c => `${c.country}|||${c.category}`);
   return [...groups.entries()].map(([, groupClaims]) => {

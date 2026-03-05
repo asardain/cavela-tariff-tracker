@@ -271,16 +271,6 @@ export function renderCells(container, data, scales, opts = {}) {
     .attr('fill', d => d.rate_pct && d.rate_pct > 50 ? blue(1) : 'var(--text)')
     .text(d => d.rate_pct !== null ? `${d.rate_pct}%` : '');
 
-  // Certainty dot (bottom-right corner)
-  groups.selectAll('.cell-certainty')
-    .data(d => [d])
-    .join('circle')
-    .attr('class', 'cell-certainty')
-    .attr('cx', cellW - 8)
-    .attr('cy', cellH - 8)
-    .attr('r', d => rScale(d.certainty_level))
-    .attr('fill', d => blue(0.9));
-
   // Trend arrow (top-right corner)
   groups.selectAll('.cell-trend')
     .data(d => [d])
