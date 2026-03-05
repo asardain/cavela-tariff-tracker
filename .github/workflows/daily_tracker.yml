@@ -1,0 +1,147 @@
+name: Daily Tariff Tracker
+
+on:
+  schedule:
+    # 9am UTC daily
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date to process (YYYY-MM-DD, defaults to today UTC)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  track-tariffs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine run date
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            echo "date=${{ github.event.inputs.date }}" >> $GITHUB_OUTPUT
+          else
+            echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+          fi
+          echo "Run date: $(cat $GITHUB_OUTPUT | grep date | cut -d= -f2)"
+
+      - name: Fetch sources
+        run: |
+          python scripts/fetch_sources.py --date ${{ steps.date.outputs.date }}
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Extract claims
+        run: |
+          python scripts/extract_claims.py --date ${{ steps.date.outputs.date }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Classify claims
+        run: |
+          python scripts/classify.py --date ${{ steps.date.outputs.date }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Generate daily summary
+        id: generate
+        run: |
+          # Generate files and capture PR body
+          python scripts/generate_daily.py --date ${{ steps.date.outputs.date }} > /tmp/pr_body.txt
+          echo "pr_body_file=/tmp/pr_body.txt" >> $GITHUB_OUTPUT
+
+          # Count claims for PR title
+          CLAIM_COUNT=$(python -c "
+          import json, sys
+          try:
+              with open('data/daily/${{ steps.date.outputs.date }}.json') as f:
+                  claims = json.load(f)
+              print(len(claims))
+          except:
+              print(0)
+          ")
+          echo "claim_count=${CLAIM_COUNT}" >> $GITHUB_OUTPUT
+          echo "Claims found: ${CLAIM_COUNT}"
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "Cavela Tariff Bot"
+          git config user.email "tariff-bot@cavela.com"
+
+      - name: Create feature branch
+        id: branch
+        run: |
+          BRANCH="tariff-update/${{ steps.date.outputs.date }}"
+          git checkout -b "${BRANCH}"
+          echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
+          echo "Created branch: ${BRANCH}"
+
+      - name: Stage and commit data files
+        run: |
+          DATE="${{ steps.date.outputs.date }}"
+
+          # Add data files
+          git add "data/raw/${DATE}/" 2>/dev/null || true
+          git add "data/extracted/${DATE}/" 2>/dev/null || true
+          git add "data/daily/${DATE}.json" 2>/dev/null || true
+          git add "data/daily/${DATE}.md" 2>/dev/null || true
+
+          # Check if there's anything to commit
+          if git diff --cached --quiet; then
+            echo "No new data files to commit."
+          else
+            git commit -m "Tariff data: ${DATE} (${{ steps.generate.outputs.claim_count }} claims)"
+          fi
+
+      - name: Push branch
+        run: |
+          git push origin "${{ steps.branch.outputs.branch }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        run: |
+          DATE="${{ steps.date.outputs.date }}"
+          CLAIM_COUNT="${{ steps.generate.outputs.claim_count }}"
+          BRANCH="${{ steps.branch.outputs.branch }}"
+
+          PR_TITLE="Tariff Update: ${DATE} (${CLAIM_COUNT} claim$( [ "${CLAIM_COUNT}" = "1" ] && echo '' || echo 's'))"
+
+          gh pr create \
+            --title "${PR_TITLE}" \
+            --body "$(cat /tmp/pr_body.txt)" \
+            --base main \
+            --head "${BRANCH}" \
+            --label "tariff-update" 2>/dev/null || \
+          gh pr create \
+            --title "${PR_TITLE}" \
+            --body "$(cat /tmp/pr_body.txt)" \
+            --base main \
+            --head "${BRANCH}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
