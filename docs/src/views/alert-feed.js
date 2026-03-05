@@ -25,7 +25,7 @@ const FLAG = {
 function countryDisplay(country) {
   if (!country || country === 'Unknown') return 'Multiple';
   const flag = FLAG[country] || '';
-  return flag ? `${flag}\u00a0${country}` : country;
+  return flag ? `${country}${flag}` : country;
 }
 
 function pillClass(tariff_action) {
