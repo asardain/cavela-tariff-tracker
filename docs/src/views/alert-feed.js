@@ -12,22 +12,24 @@ import { blue, TYPO, showTooltip, hideTooltip, claimTooltipHtml } from '../marks
 
 const CERTAINTY_BAR_MAX = 70; // px at level 7
 
-function actionPillStyle(tariff_action) {
-  if (['new_tariff', 'tariff_increase'].includes(tariff_action)) {
-    return { background: 'rgba(127,29,29,0.4)', color: '#fca5a5' };
-  }
-  if (['tariff_removal', 'tariff_pause'].includes(tariff_action)) {
-    return { background: 'rgba(20,83,45,0.4)', color: '#86efac' };
-  }
-  return { background: 'rgba(255,255,255,0.06)', color: '#888' };
+function pillClass(tariff_action) {
+  if (['new_tariff', 'tariff_increase'].includes(tariff_action)) return 'pill-red';
+  if (['tariff_removal', 'tariff_pause'].includes(tariff_action)) return 'pill-green';
+  return 'pill-gray';
+}
+
+function pillTextColor(tariff_action) {
+  if (['new_tariff', 'tariff_increase'].includes(tariff_action)) return 'var(--pill-red-text)';
+  if (['tariff_removal', 'tariff_pause'].includes(tariff_action)) return 'var(--pill-green-text)';
+  return 'var(--text-secondary)';
 }
 
 function certDots(level, tariff_action) {
   const filled = level <= 2 ? 1 : level <= 4 ? 2 : 3;
   const label = level <= 2 ? 'Speculative' : level <= 4 ? 'Likely' : 'Confirmed';
-  const color = actionPillStyle(tariff_action).color;
+  const color = pillTextColor(tariff_action);
   const dots = [1, 2, 3].map(i =>
-    `<span style="color:${i <= filled ? color : '#333'}; font-size:10px;">●</span>`
+    `<span style="color:${i <= filled ? color : 'var(--dot-empty)'}; font-size:10px;">●</span>`
   ).join('');
   return `<span title="${label}" style="letter-spacing:2px">${dots}</span>`;
 }
@@ -42,15 +44,11 @@ export function mount(container, allClaims, options = {}) {
     .attr('id', 'feed-tooltip')
     .style('position', 'fixed')
     .style('display', 'none')
-    .style('background', '#111')
-    .style('border', '1px solid rgba(255,255,255,0.12)')
     .style('border-radius', '4px')
     .style('padding', '12px 16px')
     .style('max-width', '360px')
-    .style('box-shadow', 'none')
     .style('font-size', '13px')
     .style('line-height', '1.5')
-    .style('color', '#ccc')
     .style('z-index', '100')
     .style('pointer-events', 'auto');
 
@@ -138,12 +136,9 @@ export function mount(container, allClaims, options = {}) {
           subjectTd.append('div').attr('class', 'alert-claim-detail').text(d => d.claim_text);
 
           // Action badge
-          tr.append('td').append('span').attr('class', 'action-badge')
-            .text(d => d.action_label || '—')
-            .each(function(d) {
-              const s = actionPillStyle(d.tariff_action);
-              d3.select(this).style('background', s.background).style('color', s.color);
-            });
+          tr.append('td').append('span')
+            .attr('class', d => `action-badge ${pillClass(d.tariff_action)}`)
+            .text(d => d.action_label || '—');
 
           // Certainty dot indicators
           const certTd = tr.append('td');
@@ -166,19 +161,19 @@ export function mount(container, allClaims, options = {}) {
       tooltipTimeout = setTimeout(() => {
         const sourceLine = d.source_name
           ? (d.source_url
-              ? `<a href="${d.source_url}" target="_blank" style="color:#888">${d.source_name}</a>`
+              ? `<a href="${d.source_url}" target="_blank">${d.source_name}</a>`
               : d.source_name)
           : '—';
         const dateLine = d.effective_date
-          ? `<div style="margin-top:6px;color:#555;font-size:12px">Effective: ${d.effective_date}</div>`
+          ? `<div style="margin-top:6px;color:var(--text-secondary);font-size:12px">Effective: ${d.effective_date}</div>`
           : '';
         tooltip
           .style('display', 'block')
           .style('left', `${Math.min(rect.left, window.innerWidth - 380)}px`)
           .style('top', `${rect.bottom + 8}px`)
           .html(`
-            <div style="font-weight:500;margin-bottom:4px;color:#e0e0e0">${d.claim_text || '—'}</div>
-            <div style="color:#555;font-size:12px">Source: ${sourceLine}</div>
+            <div style="font-weight:500;margin-bottom:4px;color:var(--text-body)">${d.claim_text || '—'}</div>
+            <div style="color:var(--text-secondary);font-size:12px">Source: ${sourceLine}</div>
             ${dateLine}
           `);
       }, 300);
