@@ -142,7 +142,7 @@ def fetch_rss(source: dict, hours: int) -> list[dict]:
             f"[{source['name']}] Malformed RSS: {feed.bozo_exception}"
         )
 
-    entries = feed.get("entries", [])
+    entries = getattr(feed, "entries", []) or []
     logger.info(f"[{source['name']}] Got {len(entries)} RSS entries")
 
     articles = []

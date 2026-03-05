@@ -166,14 +166,15 @@ class TestDeduplicate:
         result = deduplicate(articles)
         assert len(result) == 2
 
-    def test_articles_without_url_kept_once(self):
+    def test_articles_without_url_skipped(self):
+        """Articles with no URL are skipped entirely (URL required for dedup key)."""
         articles = [
             {"title": "No URL 1"},
             {"title": "No URL 2"},
         ]
-        # Both have empty url, so second is deduplicated out
+        # Both have no/empty url, so the dedup key is '' — they are skipped
         result = deduplicate(articles)
-        assert len(result) == 1
+        assert len(result) == 0
 
 
 class TestSaveArticle:
@@ -247,14 +248,19 @@ class TestFetchRssIntegration:
             "content": [],
         }
 
+    def _make_feed_mock(self, entries):
+        """Create a feedparser-style mock object with .entries as a list attribute."""
+        class FakeFeed:
+            bozo = False
+            bozo_exception = None
+        feed = FakeFeed()
+        feed.entries = entries
+        return feed
+
     @patch("fetch_sources.feedparser.parse")
     def test_recent_matching_article_returned(self, mock_parse):
         entry = self._make_feed_entry(hours_ago=2)
-        mock_parse.return_value = MagicMock(
-            bozo=False,
-            bozo_exception=None,
-            entries=[entry],
-        )
+        mock_parse.return_value = self._make_feed_mock([entry])
 
         from fetch_sources import fetch_rss
         articles = fetch_rss(self._make_source(), hours=24)
@@ -264,11 +270,7 @@ class TestFetchRssIntegration:
     @patch("fetch_sources.feedparser.parse")
     def test_old_article_excluded(self, mock_parse):
         entry = self._make_feed_entry(hours_ago=30)  # 30 hours ago
-        mock_parse.return_value = MagicMock(
-            bozo=False,
-            bozo_exception=None,
-            entries=[entry],
-        )
+        mock_parse.return_value = self._make_feed_mock([entry])
 
         from fetch_sources import fetch_rss
         articles = fetch_rss(self._make_source(), hours=24)
@@ -283,11 +285,7 @@ class TestFetchRssIntegration:
             "published": datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT"),
             "content": [],
         }
-        mock_parse.return_value = MagicMock(
-            bozo=False,
-            bozo_exception=None,
-            entries=[entry],
-        )
+        mock_parse.return_value = self._make_feed_mock([entry])
 
         from fetch_sources import fetch_rss
         articles = fetch_rss(self._make_source(), hours=24)
@@ -302,11 +300,7 @@ class TestFetchRssIntegration:
     @patch("fetch_sources.feedparser.parse")
     def test_article_has_required_fields(self, mock_parse):
         entry = self._make_feed_entry(hours_ago=1)
-        mock_parse.return_value = MagicMock(
-            bozo=False,
-            bozo_exception=None,
-            entries=[entry],
-        )
+        mock_parse.return_value = self._make_feed_mock([entry])
 
         from fetch_sources import fetch_rss
         articles = fetch_rss(self._make_source(), hours=24)
