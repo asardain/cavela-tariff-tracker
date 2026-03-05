@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "claim_20260224_001",
+    "subject": "India chemical tariff removal discussed",
+    "claim_text": "Trade negotiators are discussing removal of existing tariffs on Indian chemical imports.",
+    "tariff_action": "tariff_removal",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "Trade Week",
+    "source_url": "https://tradeweek.com",
+    "published_date": "2026-02-24",
+    "extracted_date": "2026-02-24",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260224_002",
+    "subject": "Mexico steel and aluminum tariff pause extended",
+    "claim_text": "The USTR extended the tariff pause on Mexican steel and aluminum imports for 60 days.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-24",
+    "extracted_date": "2026-02-24",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260224_003",
+    "subject": "25% tariff on Chinese apparel imports",
+    "claim_text": "The administration announced a 25% tariff on all apparel imports from China, effective April 1.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-24",
+    "extracted_date": "2026-02-24",
+    "effective_date": "2026-04-20"
+  }
+]

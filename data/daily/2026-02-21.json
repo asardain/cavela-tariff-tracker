@@ -1,0 +1,28 @@
+[
+  {
+    "claim_id": "claim_20260221_001",
+    "subject": "45% tariff on Indian plastic and rubber imports",
+    "claim_text": "Executive order signed placing 45% tariff on plastic and rubber chemical imports from India.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-21",
+    "extracted_date": "2026-02-21",
+    "effective_date": "2026-04-02"
+  },
+  {
+    "claim_id": "claim_20260221_002",
+    "subject": "Mexico steel and aluminum tariff pause extended",
+    "claim_text": "The USTR extended the tariff pause on Mexican steel and aluminum imports for 60 days.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-21",
+    "extracted_date": "2026-02-21",
+    "effective_date": null
+  }
+]

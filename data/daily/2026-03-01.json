@@ -1,0 +1,15 @@
+[
+  {
+    "claim_id": "claim_20260301_001",
+    "subject": "USMCA auto parts tariff exemption rule proposed",
+    "claim_text": "Commerce proposed removing USMCA tariff exemptions on certain auto parts from Mexico.",
+    "tariff_action": "rule_proposed",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "Commerce.gov",
+    "source_url": "https://commerce.gov",
+    "published_date": "2026-03-01",
+    "extracted_date": "2026-03-01",
+    "effective_date": "2026-04-30"
+  }
+]

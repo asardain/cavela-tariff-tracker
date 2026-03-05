@@ -1,0 +1,93 @@
+[
+  {
+    "claim_id": "claim_20260204_001",
+    "subject": "India chemical tariff removal discussed",
+    "claim_text": "Trade negotiators are discussing removal of existing tariffs on Indian chemical imports.",
+    "tariff_action": "tariff_removal",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "Trade Week",
+    "source_url": "https://tradeweek.com",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260204_002",
+    "subject": "Cambodia apparel tariff increase to 35%",
+    "claim_text": "New 35% tariff on Cambodian apparel announced, escalating from existing 12%.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Bloomberg",
+    "source_url": "https://bloomberg.com",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": "2026-03-21"
+  },
+  {
+    "claim_id": "claim_20260204_003",
+    "subject": "Mexico steel and aluminum tariff pause extended",
+    "claim_text": "The USTR extended the tariff pause on Mexican steel and aluminum imports for 60 days.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260204_004",
+    "subject": "25% tariff on Mexican auto parts under IEEPA",
+    "claim_text": "White House confirmed 25% tariff on auto parts and vehicle components from Mexico under IEEPA authority.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "AP",
+    "source_url": "https://apnews.com",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": "2026-03-21"
+  },
+  {
+    "claim_id": "claim_20260204_005",
+    "subject": "45% tariff on Indian plastic and rubber imports",
+    "claim_text": "Executive order signed placing 45% tariff on plastic and rubber chemical imports from India.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": "2026-03-16"
+  },
+  {
+    "claim_id": "claim_20260204_006",
+    "subject": "China tariff pause on garments suspended",
+    "claim_text": "The 90-day pause on Chinese garment tariffs has been suspended pending review.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "WSJ",
+    "source_url": "https://wsj.com",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260204_007",
+    "subject": "USMCA auto parts tariff exemption rule proposed",
+    "claim_text": "Commerce proposed removing USMCA tariff exemptions on certain auto parts from Mexico.",
+    "tariff_action": "rule_proposed",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "Commerce.gov",
+    "source_url": "https://commerce.gov",
+    "published_date": "2026-02-04",
+    "extracted_date": "2026-02-04",
+    "effective_date": "2026-04-05"
+  }
+]

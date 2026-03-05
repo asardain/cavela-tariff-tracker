@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "claim_20260226_001",
+    "subject": "New 145% tariff on Chinese textile goods",
+    "claim_text": "Executive Order signed imposing 145% tariff on Chinese textile and fabric imports.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Bloomberg",
+    "source_url": "https://bloomberg.com",
+    "published_date": "2026-02-26",
+    "extracted_date": "2026-02-26",
+    "effective_date": "2026-03-28"
+  },
+  {
+    "claim_id": "claim_20260226_002",
+    "subject": "Vietnam footwear tariff rule published at 38%",
+    "claim_text": "CBP published final rule imposing 38% tariff on Vietnamese footwear effective May 1.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "source_name": "CBP.gov",
+    "source_url": "https://cbp.gov",
+    "published_date": "2026-02-26",
+    "extracted_date": "2026-02-26",
+    "effective_date": "2026-04-24"
+  },
+  {
+    "claim_id": "claim_20260226_003",
+    "subject": "Bangladesh garment exports face new 15% tariff",
+    "claim_text": "New 15% tariff on garment and fabric exports from Bangladesh signed into law.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "source_name": "FT",
+    "source_url": "https://ft.com",
+    "published_date": "2026-02-26",
+    "extracted_date": "2026-02-26",
+    "effective_date": "2026-03-28"
+  }
+]

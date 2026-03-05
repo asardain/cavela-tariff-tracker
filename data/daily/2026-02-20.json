@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "claim_20260220_001",
+    "subject": "Vietnam shoe tariff speculation amid trade talks",
+    "claim_text": "Analysts speculate Vietnam could face 20-30% tariffs on footwear if trade talks stall.",
+    "tariff_action": "other",
+    "certainty_level": 1,
+    "certainty_label": "SPECULATION",
+    "source_name": "Trade Week",
+    "source_url": "https://tradeweek.com",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-02-20",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260220_002",
+    "subject": "Mexico steel and aluminum tariff pause extended",
+    "claim_text": "The USTR extended the tariff pause on Mexican steel and aluminum imports for 60 days.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-02-20",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260220_003",
+    "subject": "India machinery tariff law enacted at 18%",
+    "claim_text": "Congress passed law imposing 18% tariff on industrial machinery imports from India.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 7,
+    "certainty_label": "LAW",
+    "source_name": "Bloomberg",
+    "source_url": "https://bloomberg.com",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-02-20",
+    "effective_date": "2026-03-12"
+  }
+]

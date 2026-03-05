@@ -1,0 +1,93 @@
+[
+  {
+    "claim_id": "claim_20260205_001",
+    "subject": "Vietnam footwear tariff rule published at 38%",
+    "claim_text": "CBP published final rule imposing 38% tariff on Vietnamese footwear effective May 1.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "source_name": "CBP.gov",
+    "source_url": "https://cbp.gov",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": "2026-04-03"
+  },
+  {
+    "claim_id": "claim_20260205_002",
+    "subject": "China electronics tariff investigation opened",
+    "claim_text": "Section 301 investigation opened into Chinese semiconductor and electronics trade practices.",
+    "tariff_action": "investigation_opened",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "AP",
+    "source_url": "https://apnews.com",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260205_003",
+    "subject": "Mexico auto tariff increase to 30% reported",
+    "claim_text": "Sources report a planned increase to 30% on Mexican automobile parts imports.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260205_004",
+    "subject": "Vietnam textile tariff increase 28% announced",
+    "claim_text": "Administration announced 28% tariff on Vietnamese textile and fabric imports, effective June 1.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "FT",
+    "source_url": "https://ft.com",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": "2026-05-03"
+  },
+  {
+    "claim_id": "claim_20260205_005",
+    "subject": "25% tariff on Mexican auto parts under IEEPA",
+    "claim_text": "White House confirmed 25% tariff on auto parts and vehicle components from Mexico under IEEPA authority.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "AP",
+    "source_url": "https://apnews.com",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": "2026-03-22"
+  },
+  {
+    "claim_id": "claim_20260205_006",
+    "subject": "Mexico steel and aluminum tariff pause extended",
+    "claim_text": "The USTR extended the tariff pause on Mexican steel and aluminum imports for 60 days.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260205_007",
+    "subject": "45% tariff on Indian plastic and rubber imports",
+    "claim_text": "Executive order signed placing 45% tariff on plastic and rubber chemical imports from India.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-05",
+    "extracted_date": "2026-02-05",
+    "effective_date": "2026-03-17"
+  }
+]

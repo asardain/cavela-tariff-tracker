@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "claim_20260219_001",
+    "subject": "Vietnam shoe tariff speculation amid trade talks",
+    "claim_text": "Analysts speculate Vietnam could face 20-30% tariffs on footwear if trade talks stall.",
+    "tariff_action": "other",
+    "certainty_level": 1,
+    "certainty_label": "SPECULATION",
+    "source_name": "Trade Week",
+    "source_url": "https://tradeweek.com",
+    "published_date": "2026-02-19",
+    "extracted_date": "2026-02-19",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260219_002",
+    "subject": "45% tariff on Indian plastic and rubber imports",
+    "claim_text": "Executive order signed placing 45% tariff on plastic and rubber chemical imports from India.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-19",
+    "extracted_date": "2026-02-19",
+    "effective_date": "2026-03-31"
+  },
+  {
+    "claim_id": "claim_20260219_003",
+    "subject": "New 145% tariff on Chinese textile goods",
+    "claim_text": "Executive Order signed imposing 145% tariff on Chinese textile and fabric imports.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Bloomberg",
+    "source_url": "https://bloomberg.com",
+    "published_date": "2026-02-19",
+    "extracted_date": "2026-02-19",
+    "effective_date": "2026-03-21"
+  }
+]

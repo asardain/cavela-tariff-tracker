@@ -1,0 +1,54 @@
+[
+  {
+    "claim_id": "claim_20260211_001",
+    "subject": "New 145% tariff on Chinese textile goods",
+    "claim_text": "Executive Order signed imposing 145% tariff on Chinese textile and fabric imports.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Bloomberg",
+    "source_url": "https://bloomberg.com",
+    "published_date": "2026-02-11",
+    "extracted_date": "2026-02-11",
+    "effective_date": "2026-03-13"
+  },
+  {
+    "claim_id": "claim_20260211_002",
+    "subject": "China tariff pause on garments suspended",
+    "claim_text": "The 90-day pause on Chinese garment tariffs has been suspended pending review.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "WSJ",
+    "source_url": "https://wsj.com",
+    "published_date": "2026-02-11",
+    "extracted_date": "2026-02-11",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260211_003",
+    "subject": "25% tariff on Mexican auto parts under IEEPA",
+    "claim_text": "White House confirmed 25% tariff on auto parts and vehicle components from Mexico under IEEPA authority.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "AP",
+    "source_url": "https://apnews.com",
+    "published_date": "2026-02-11",
+    "extracted_date": "2026-02-11",
+    "effective_date": "2026-03-28"
+  },
+  {
+    "claim_id": "claim_20260211_004",
+    "subject": "25% tariff on Chinese apparel imports",
+    "claim_text": "The administration announced a 25% tariff on all apparel imports from China, effective April 1.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-11",
+    "extracted_date": "2026-02-11",
+    "effective_date": "2026-04-07"
+  }
+]

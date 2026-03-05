@@ -1,0 +1,28 @@
+[
+  {
+    "claim_id": "claim_20260214_001",
+    "subject": "Mexico auto tariff increase to 30% reported",
+    "claim_text": "Sources report a planned increase to 30% on Mexican automobile parts imports.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-02-14",
+    "extracted_date": "2026-02-14",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260214_002",
+    "subject": "20% tariff on Indian pharmaceutical chemicals",
+    "claim_text": "The US proposed a 20% tariff on pharmaceutical chemicals and active ingredients from India.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "WSJ",
+    "source_url": "https://wsj.com",
+    "published_date": "2026-02-14",
+    "extracted_date": "2026-02-14",
+    "effective_date": "2026-04-30"
+  }
+]

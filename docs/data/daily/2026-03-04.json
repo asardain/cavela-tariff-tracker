@@ -1,0 +1,80 @@
+[
+  {
+    "claim_id": "claim_20260304_001",
+    "subject": "India chemical tariff removal discussed",
+    "claim_text": "Trade negotiators are discussing removal of existing tariffs on Indian chemical imports.",
+    "tariff_action": "tariff_removal",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "Trade Week",
+    "source_url": "https://tradeweek.com",
+    "published_date": "2026-03-04",
+    "extracted_date": "2026-03-04",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260304_002",
+    "subject": "45% tariff on Indian plastic and rubber imports",
+    "claim_text": "Executive order signed placing 45% tariff on plastic and rubber chemical imports from India.",
+    "tariff_action": "new_tariff",
+    "certainty_level": 5,
+    "certainty_label": "EXECUTIVE_ORDER",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-03-04",
+    "extracted_date": "2026-03-04",
+    "effective_date": "2026-04-13"
+  },
+  {
+    "claim_id": "claim_20260304_003",
+    "subject": "Vietnam textile tariff increase 28% announced",
+    "claim_text": "Administration announced 28% tariff on Vietnamese textile and fabric imports, effective June 1.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "FT",
+    "source_url": "https://ft.com",
+    "published_date": "2026-03-04",
+    "extracted_date": "2026-03-04",
+    "effective_date": "2026-05-30"
+  },
+  {
+    "claim_id": "claim_20260304_004",
+    "subject": "46% tariff proposed on Vietnamese footwear",
+    "claim_text": "The administration is proposing a 46% tariff on footwear and shoes imported from Vietnam.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "FT",
+    "source_url": "https://ft.com",
+    "published_date": "2026-03-04",
+    "extracted_date": "2026-03-04",
+    "effective_date": "2026-06-02"
+  },
+  {
+    "claim_id": "claim_20260304_005",
+    "subject": "Mexico steel and aluminum tariff pause extended",
+    "claim_text": "The USTR extended the tariff pause on Mexican steel and aluminum imports for 60 days.",
+    "tariff_action": "tariff_pause",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-03-04",
+    "extracted_date": "2026-03-04",
+    "effective_date": null
+  },
+  {
+    "claim_id": "claim_20260304_006",
+    "subject": "USMCA auto parts tariff exemption rule proposed",
+    "claim_text": "Commerce proposed removing USMCA tariff exemptions on certain auto parts from Mexico.",
+    "tariff_action": "rule_proposed",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "Commerce.gov",
+    "source_url": "https://commerce.gov",
+    "published_date": "2026-03-04",
+    "extracted_date": "2026-03-04",
+    "effective_date": "2026-05-03"
+  }
+]

@@ -100,15 +100,29 @@ jobs:
           echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
           echo "Created branch: ${BRANCH}"
 
+      - name: Copy data to docs/ for GitHub Pages
+        run: |
+          DATE="${{ steps.date.outputs.date }}"
+          mkdir -p docs/data/daily
+          if [ -f "data/daily/${DATE}.json" ]; then
+            cp "data/daily/${DATE}.json" "docs/data/daily/${DATE}.json"
+            echo "Copied ${DATE}.json to docs/data/daily/"
+          else
+            echo "No data file for ${DATE} to copy."
+          fi
+
       - name: Stage and commit data files
         run: |
           DATE="${{ steps.date.outputs.date }}"
 
-          # Add data files
+          # Add data files (pipeline outputs)
           git add "data/raw/${DATE}/" 2>/dev/null || true
           git add "data/extracted/${DATE}/" 2>/dev/null || true
           git add "data/daily/${DATE}.json" 2>/dev/null || true
           git add "data/daily/${DATE}.md" 2>/dev/null || true
+
+          # Add docs/ copy for GitHub Pages
+          git add "docs/data/daily/${DATE}.json" 2>/dev/null || true
 
           # Check if there's anything to commit
           if git diff --cached --quiet; then

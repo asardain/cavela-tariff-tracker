@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "claim_20260305_001",
+    "subject": "Cambodia apparel tariff increase to 35%",
+    "claim_text": "New 35% tariff on Cambodian apparel announced, escalating from existing 12%.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "source_name": "Bloomberg",
+    "source_url": "https://bloomberg.com",
+    "published_date": "2026-03-05",
+    "extracted_date": "2026-03-05",
+    "effective_date": "2026-04-19"
+  },
+  {
+    "claim_id": "claim_20260305_002",
+    "subject": "Indonesia footwear tariff rule proposed at 32%",
+    "claim_text": "Commerce proposed 32% tariff on footwear and shoes imported from Indonesia.",
+    "tariff_action": "rule_proposed",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "source_name": "Commerce.gov",
+    "source_url": "https://commerce.gov",
+    "published_date": "2026-03-05",
+    "extracted_date": "2026-03-05",
+    "effective_date": "2026-05-24"
+  },
+  {
+    "claim_id": "claim_20260305_003",
+    "subject": "Mexico auto tariff increase to 30% reported",
+    "claim_text": "Sources report a planned increase to 30% on Mexican automobile parts imports.",
+    "tariff_action": "tariff_increase",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "source_name": "Reuters",
+    "source_url": "https://reuters.com",
+    "published_date": "2026-03-05",
+    "extracted_date": "2026-03-05",
+    "effective_date": null
+  }
+]
