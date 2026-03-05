@@ -133,7 +133,7 @@ jobs:
 
       - name: Push branch
         run: |
-          git push origin "${{ steps.branch.outputs.branch }}"
+          git push origin "${{ steps.branch.outputs.branch }}" --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
