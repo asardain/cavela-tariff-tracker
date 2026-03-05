@@ -22,15 +22,36 @@ function actionPillStyle(tariff_action) {
   return { background: '#f3f4f6', color: '#374151' };
 }
 
-function certBucket(level) {
-  if (level <= 2) return { label: 'Speculative', bg: '#f3f4f6', color: '#6b7280' };
-  if (level <= 4) return { label: 'Likely',      bg: '#fef3c7', color: '#92400e' };
-  return              { label: 'Confirmed',    bg: '#dbeafe', color: '#1e40af' };
+function certDots(level) {
+  const filled = level <= 2 ? 1 : level <= 4 ? 2 : 3;
+  const color = level <= 2 ? '#9ca3af' : level <= 4 ? '#f59e0b' : '#3b82f6';
+  const label = level <= 2 ? 'Speculative' : level <= 4 ? 'Likely' : 'Confirmed';
+  const dots = [1, 2, 3].map(i =>
+    `<span style="color:${i <= filled ? color : '#e5e7eb'}; font-size:10px;">●</span>`
+  ).join('');
+  return `<span title="${label}" style="letter-spacing:2px">${dots}</span>`;
 }
 
 export function mount(container, allClaims, options = {}) {
   const el = d3.select(container);
   el.html(''); // clear
+
+  // ---- Hover tooltip
+  let tooltipTimeout = null;
+  const tooltip = d3.select('body').append('div')
+    .attr('id', 'feed-tooltip')
+    .style('position', 'fixed')
+    .style('display', 'none')
+    .style('background', 'white')
+    .style('border', '1px solid #e5e7eb')
+    .style('border-radius', '6px')
+    .style('padding', '12px 16px')
+    .style('max-width', '360px')
+    .style('box-shadow', '0 4px 12px rgba(0,0,0,0.12)')
+    .style('font-size', '13px')
+    .style('line-height', '1.5')
+    .style('z-index', '100')
+    .style('pointer-events', 'none');
 
   if (!allClaims || allClaims.length === 0) {
     el.append('div').attr('class', 'empty-state')
@@ -119,19 +140,11 @@ export function mount(container, allClaims, options = {}) {
               d3.select(this).style('background', s.background).style('color', s.color);
             });
 
-          // Certainty bucket badge
+          // Certainty dot indicators
           const certTd = tr.append('td');
-          certTd.append('span').attr('class', 'certainty-label-text')
+          certTd.append('span').attr('class', 'certainty-dots')
             .each(function(d) {
-              const b = certBucket(d.certainty_level);
-              d3.select(this)
-                .text(b.label)
-                .style('background', b.bg)
-                .style('color', b.color)
-                .style('padding', '2px 8px')
-                .style('border-radius', '9999px')
-                .style('font-size', '0.75em')
-                .style('font-weight', '500');
+              d3.select(this).html(certDots(d.certainty_level));
             });
 
           return tr;
@@ -141,12 +154,32 @@ export function mount(container, allClaims, options = {}) {
       )
       .classed('anomaly', d => d.is_anomaly);
 
-    // Toggle row expansion on click
-    rows.on('click', function(event, d) {
-      const row = d3.select(this);
-      const expanded = row.classed('expanded');
-      tbody.selectAll('.alert-row').classed('expanded', false);
-      row.classed('expanded', !expanded);
+    // Hover tooltip (replaces click-expand)
+    rows.on('mouseenter', function(event, d) {
+      clearTimeout(tooltipTimeout);
+      const rect = this.getBoundingClientRect();
+      tooltipTimeout = setTimeout(() => {
+        const sourceLine = d.source_name
+          ? (d.source_url
+              ? `<a href="${d.source_url}" target="_blank" style="color:#3b82f6">${d.source_name}</a>`
+              : d.source_name)
+          : '—';
+        const dateLine = d.effective_date
+          ? `<div style="margin-top:6px;color:#6b7280;font-size:12px">Effective: ${d.effective_date}</div>`
+          : '';
+        tooltip
+          .style('display', 'block')
+          .style('left', `${Math.min(rect.left, window.innerWidth - 380)}px`)
+          .style('top', `${rect.bottom + 8}px`)
+          .html(`
+            <div style="font-weight:500;margin-bottom:4px">${d.claim_text || '—'}</div>
+            <div style="color:#6b7280;font-size:12px">Source: ${sourceLine}</div>
+            ${dateLine}
+          `);
+      }, 300);
+    }).on('mouseleave', function() {
+      clearTimeout(tooltipTimeout);
+      tooltip.style('display', 'none');
     });
   }
 
