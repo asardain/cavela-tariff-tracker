@@ -1,0 +1,206 @@
+# Cavela Tariff Tracker — Source Registry
+# Each source has metadata for fetching and reliability classification.
+#
+# Fields:
+#   name: Human-readable source name
+#   url: Main website URL
+#   rss_url: RSS feed URL (null if none)
+#   category: official_us_gov | international_body | news_wire | financial_press
+#   reliability_floor: Minimum certainty level (1-7) for claims from this source
+#   active: true/false to enable/disable without removing
+#   fetch_method: rss | scrape
+#   scrape_selector: CSS selector for article links (only for fetch_method: scrape)
+#   keywords: List of keywords to filter articles (case-insensitive, any match)
+
+sources:
+
+  # ─── Official US Government ─────────────────────────────────────────────────
+
+  - name: "USTR"
+    description: "Office of the US Trade Representative — official US tariff actions, trade agreements, Section 301/232 actions"
+    url: "https://ustr.gov"
+    rss_url: "https://ustr.gov/rss.xml"
+    category: "official_us_gov"
+    reliability_floor: 3
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "trade"
+      - "duty"
+      - "import"
+      - "export"
+      - "section 301"
+      - "section 232"
+      - "safeguard"
+
+  - name: "Federal Register"
+    description: "Official daily journal of the US federal government — notices, proposed rules, final rules"
+    url: "https://www.federalregister.gov"
+    rss_url: "https://www.federalregister.gov/api/v1/articles.rss?conditions[agencies][]=international-trade-administration&conditions[agencies][]=office-of-the-united-states-trade-representative&conditions[agencies][]=customs-and-border-protection"
+    category: "official_us_gov"
+    reliability_floor: 3
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "antidumping"
+      - "countervailing"
+      - "safeguard"
+      - "section 301"
+      - "section 232"
+      - "hts"
+      - "harmonized tariff"
+
+  - name: "CBP"
+    description: "US Customs and Border Protection — HTS code updates, entry procedures, tariff enforcement"
+    url: "https://www.cbp.gov"
+    rss_url: "https://www.cbp.gov/newsroom/rss.xml"
+    category: "official_us_gov"
+    reliability_floor: 3
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "hts"
+      - "trade"
+      - "import"
+      - "antidumping"
+      - "countervailing"
+
+  - name: "USITC"
+    description: "US International Trade Commission — trade investigations, injury determinations, Harmonized Tariff Schedule"
+    url: "https://www.usitc.gov"
+    rss_url: "https://www.usitc.gov/press_room/news_release/rss_news.xml"
+    category: "official_us_gov"
+    reliability_floor: 3
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "antidumping"
+      - "countervailing"
+      - "safeguard"
+      - "investigation"
+      - "trade remedy"
+      - "hts"
+
+  - name: "BIS / Commerce"
+    description: "Bureau of Industry and Security — export controls, Entity List, tariff-adjacent trade restrictions"
+    url: "https://www.bis.gov"
+    rss_url: "https://www.bis.gov/rss.xml"
+    category: "official_us_gov"
+    reliability_floor: 3
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "export control"
+      - "entity list"
+      - "trade restriction"
+      - "import"
+      - "section 232"
+
+  # ─── International Bodies ────────────────────────────────────────────────────
+
+  - name: "WTO Dispute Settlement"
+    description: "World Trade Organization — dispute settlement news, panel reports, tariff-related rulings"
+    url: "https://www.wto.org"
+    rss_url: "https://www.wto.org/english/news_e/rss_e/news_e.rss"
+    category: "international_body"
+    reliability_floor: 2
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "us tariff"
+      - "united states"
+      - "dispute"
+      - "trade remedy"
+      - "antidumping"
+      - "countervailing"
+
+  # ─── News Wires ──────────────────────────────────────────────────────────────
+
+  - name: "Reuters Trade"
+    description: "Reuters trade and tariff news RSS feed"
+    url: "https://www.reuters.com"
+    rss_url: "https://feeds.reuters.com/reuters/businessNews"
+    category: "news_wire"
+    reliability_floor: 1
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "trade war"
+      - "import tax"
+      - "section 301"
+      - "section 232"
+      - "trade deal"
+      - "trade agreement"
+      - "countervailing"
+      - "antidumping"
+
+  - name: "PR Newswire"
+    description: "PR Newswire press releases — filtered for tariff and trade keywords"
+    url: "https://www.prnewswire.com"
+    rss_url: "https://www.prnewswire.com/rss/news-releases-list.rss"
+    category: "news_wire"
+    reliability_floor: 1
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "trade war"
+      - "import tax"
+      - "section 301"
+      - "section 232"
+      - "antidumping"
+      - "countervailing"
+      - "trade remedy"
+
+  # ─── Financial Press ─────────────────────────────────────────────────────────
+
+  - name: "Politico Trade"
+    description: "Politico trade policy coverage"
+    url: "https://www.politico.com"
+    rss_url: "https://www.politico.com/rss/politicopicks.xml"
+    category: "financial_press"
+    reliability_floor: 1
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "trade war"
+      - "import duty"
+      - "section 301"
+      - "section 232"
+      - "trade deal"
+      - "trade agreement"
+      - "antidumping"
+
+  - name: "Bloomberg Trade"
+    description: "Bloomberg trade and tariff news (public RSS)"
+    url: "https://www.bloomberg.com"
+    rss_url: "https://feeds.bloomberg.com/markets/news.rss"
+    category: "financial_press"
+    reliability_floor: 1
+    active: true
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "duty"
+      - "trade war"
+      - "import tax"
+      - "section 301"
+      - "section 232"
+      - "trade deal"
+      - "antidumping"
+      - "countervailing"
