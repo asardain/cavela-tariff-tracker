@@ -36,9 +36,11 @@ function actionColor(action) {
   return ACTION_COLOR[action] || '#6b7280';
 }
 
-// Certainty level (1–7) -> opacity (0.2–1.0)
+// Certainty level (1–7) -> 3-tier opacity
 function certaintyOpacityLinear(level) {
-  return 0.2 + (level - 1) * (0.8 / 6);
+  if (level <= 2) return 0.3;  // Speculative
+  if (level <= 4) return 0.65; // Likely
+  return 1.0;                  // Confirmed
 }
 
 export function mount(container, allClaims, options = {}) {
