@@ -19,6 +19,9 @@
   --filter-active-border: rgba(255,255,255,0.25);
   --tooltip-bg:   #111;
   --dot-empty:    #333;
+  /* Aliases used in marks.js */
+  --text:         var(--text-primary);
+  --font:         'Inter', system-ui, sans-serif;
 }
 
 /* Action pill colors — dark (default) */
@@ -50,6 +53,7 @@ html[data-theme="light"] {
   --filter-active-border: rgba(0,0,0,0.3);
   --tooltip-bg:   #ffffff;
   --dot-empty:    #ccc;
+  --text:         var(--text-primary);
   --pill-red-bg:    rgba(220,38,38,0.1);
   --pill-red-text:  #b91c1c;
   --pill-green-bg:  rgba(22,163,74,0.1);
@@ -226,7 +230,7 @@ body {
 .alert-feed-table thead th {
   padding: 0 12px 16px;
 }
-.alert-feed-table thead th:first-child { padding-left: 0; }
+.alert-feed-table thead th:first-child { padding-left: 12px; }
 
 .alert-feed-table td,
 .feed-table td {
@@ -245,7 +249,7 @@ body {
   font-size: 13px;
 }
 
-.alert-row td:first-child { padding-left: 0; }
+.alert-row td:first-child { padding-left: 12px; }
 
 .feed-table td:first-child { padding-right: 24px; }
 
