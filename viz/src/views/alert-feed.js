@@ -22,10 +22,10 @@ function actionPillStyle(tariff_action) {
   return { background: '#f3f4f6', color: '#374151' };
 }
 
-function certDots(level) {
+function certDots(level, tariff_action) {
   const filled = level <= 2 ? 1 : level <= 4 ? 2 : 3;
-  const color = level <= 2 ? '#9ca3af' : level <= 4 ? '#f59e0b' : '#3b82f6';
   const label = level <= 2 ? 'Speculative' : level <= 4 ? 'Likely' : 'Confirmed';
+  const color = actionPillStyle(tariff_action).color;
   const dots = [1, 2, 3].map(i =>
     `<span style="color:${i <= filled ? color : '#e5e7eb'}; font-size:10px;">●</span>`
   ).join('');
@@ -144,7 +144,7 @@ export function mount(container, allClaims, options = {}) {
           const certTd = tr.append('td');
           certTd.append('span').attr('class', 'certainty-dots')
             .each(function(d) {
-              d3.select(this).html(certDots(d.certainty_level));
+              d3.select(this).html(certDots(d.certainty_level, d.tariff_action));
             });
 
           return tr;
