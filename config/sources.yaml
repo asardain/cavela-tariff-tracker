@@ -34,13 +34,35 @@ sources:
       - "section 232"
       - "safeguard"
 
+  - name: "White House"
+    description: "White House briefing room — presidential executive orders, proclamations, and trade policy announcements"
+    url: "https://www.whitehouse.gov"
+    rss_url: "https://www.whitehouse.gov/feed/"
+    category: "official_us_gov"
+    reliability_floor: 5
+    active: true
+    feed_exclude: false
+    fetch_method: "rss"
+    keywords:
+      - "tariff"
+      - "trade"
+      - "duty"
+      - "import"
+      - "section 232"
+      - "section 301"
+      - "executive order"
+      - "proclamation"
+      - "ieepa"
+      - "reciprocal"
+
   - name: "Federal Register"
-    description: "Official daily journal of the US federal government — notices, proposed rules, final rules"
+    description: "Official daily journal of the US federal government — notices, proposed rules, final rules. Used for rate data only; routine investigation notices excluded from news feed."
     url: "https://www.federalregister.gov"
     rss_url: "https://www.federalregister.gov/api/v1/articles.rss?conditions[agencies][]=international-trade-administration&conditions[agencies][]=office-of-the-united-states-trade-representative&conditions[agencies][]=customs-and-border-protection"
     category: "official_us_gov"
     reliability_floor: 3
     active: true
+    feed_exclude: true
     fetch_method: "rss"
     keywords:
       - "tariff"

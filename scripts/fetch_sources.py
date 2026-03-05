@@ -194,6 +194,7 @@ def fetch_rss(source: dict, hours: int) -> list[dict]:
             "source_category": source["category"],
             "source_url": source["url"],
             "reliability_floor": source.get("reliability_floor", 1),
+            "feed_exclude": source.get("feed_exclude", False),
             "fetched_at": datetime.now(timezone.utc).isoformat(),
         }
         articles.append(article)
@@ -273,6 +274,7 @@ def fetch_scrape(source: dict, hours: int) -> list[dict]:
                 "source_category": source["category"],
                 "source_url": source["url"],
                 "reliability_floor": source.get("reliability_floor", 1),
+                "feed_exclude": source.get("feed_exclude", False),
                 "fetched_at": datetime.now(timezone.utc).isoformat(),
             }
             articles.append(article)
