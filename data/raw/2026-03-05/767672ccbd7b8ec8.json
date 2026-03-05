@@ -7,5 +7,6 @@
   "source_category": "official_us_gov",
   "source_url": "https://ustr.gov",
   "reliability_floor": 3,
-  "fetched_at": "2026-03-05T06:49:55.251949+00:00"
+  "feed_exclude": false,
+  "fetched_at": "2026-03-05T09:50:42.346183+00:00"
 }
