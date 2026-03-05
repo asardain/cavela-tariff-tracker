@@ -12,6 +12,22 @@ import { blue, TYPO, showTooltip, hideTooltip, claimTooltipHtml } from '../marks
 
 const CERTAINTY_BAR_MAX = 70; // px at level 7
 
+function actionPillStyle(tariff_action) {
+  if (['new_tariff', 'tariff_increase'].includes(tariff_action)) {
+    return { background: '#fee2e2', color: '#991b1b' };
+  }
+  if (['tariff_removal', 'tariff_pause'].includes(tariff_action)) {
+    return { background: '#dcfce7', color: '#166534' };
+  }
+  return { background: '#f3f4f6', color: '#374151' };
+}
+
+function certBucket(level) {
+  if (level <= 2) return { label: 'Speculative', bg: '#f3f4f6', color: '#6b7280' };
+  if (level <= 4) return { label: 'Likely',      bg: '#fef3c7', color: '#92400e' };
+  return              { label: 'Confirmed',    bg: '#dbeafe', color: '#1e40af' };
+}
+
 export function mount(container, allClaims, options = {}) {
   const el = d3.select(container);
   el.html(''); // clear
@@ -27,7 +43,6 @@ export function mount(container, allClaims, options = {}) {
   // Filter state
   let activeCountry = 'All';
   let activeAction = 'All';
-  let showAnomalyOnly = false;
 
   // ---- Header
   const header = el.append('div').attr('class', 'view-header');
@@ -64,17 +79,6 @@ export function mount(container, allClaims, options = {}) {
     actionSelect.append('option').attr('value', a).text(a === 'All' ? 'All actions' : ACTION_LABELS[a]);
   });
 
-  filterBar.append('button')
-    .attr('class', 'filter-pill')
-    .style('margin-left', '16px')
-    .attr('id', 'anomaly-toggle')
-    .text('Anomalies only')
-    .on('click', function() {
-      showAnomalyOnly = !showAnomalyOnly;
-      d3.select(this).classed('active', showAnomalyOnly);
-      renderTable();
-    });
-
   // ---- Table container
   const tableWrap = el.append('div').style('overflow-x', 'auto');
   const table = tableWrap.append('table').attr('class', 'alert-feed-table');
@@ -90,7 +94,6 @@ export function mount(container, allClaims, options = {}) {
     let filtered = claims;
     if (activeCountry !== 'All') filtered = filtered.filter(c => c.country === activeCountry);
     if (activeAction !== 'All') filtered = filtered.filter(c => c.tariff_action === activeAction);
-    if (showAnomalyOnly) filtered = filtered.filter(c => c.is_anomaly);
 
     const rows = tbody.selectAll('.alert-row')
       .data(filtered.slice(0, 50), d => d.claim_id)
@@ -109,17 +112,27 @@ export function mount(container, allClaims, options = {}) {
           subjectTd.append('div').attr('class', 'alert-claim-detail').text(d => d.claim_text);
 
           // Action badge
-          tr.append('td').append('span').attr('class', 'action-badge').text(d => d.action_label || '—');
+          tr.append('td').append('span').attr('class', 'action-badge')
+            .text(d => d.action_label || '—')
+            .each(function(d) {
+              const s = actionPillStyle(d.tariff_action);
+              d3.select(this).style('background', s.background).style('color', s.color);
+            });
 
-          // Certainty bar
+          // Certainty bucket badge
           const certTd = tr.append('td');
-          const barWrap = certTd.append('div').attr('class', 'certainty-bar-wrap');
-          barWrap.append('div')
-            .attr('class', 'certainty-bar')
-            .style('width', d => `${Math.round((d.certainty_level / 7) * CERTAINTY_BAR_MAX)}px`)
-            .style('opacity', d => 0.3 + (d.certainty_level / 7) * 0.7);
-          barWrap.append('span').attr('class', 'certainty-label-text')
-            .text(d => `${d.certainty_label} (${d.certainty_level})`);
+          certTd.append('span').attr('class', 'certainty-label-text')
+            .each(function(d) {
+              const b = certBucket(d.certainty_level);
+              d3.select(this)
+                .text(b.label)
+                .style('background', b.bg)
+                .style('color', b.color)
+                .style('padding', '2px 8px')
+                .style('border-radius', '9999px')
+                .style('font-size', '0.75em')
+                .style('font-weight', '500');
+            });
 
           return tr;
         },
