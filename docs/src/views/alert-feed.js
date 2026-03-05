@@ -14,12 +14,12 @@ const CERTAINTY_BAR_MAX = 70; // px at level 7
 
 function actionPillStyle(tariff_action) {
   if (['new_tariff', 'tariff_increase'].includes(tariff_action)) {
-    return { background: '#fee2e2', color: '#991b1b' };
+    return { background: 'rgba(127,29,29,0.4)', color: '#fca5a5' };
   }
   if (['tariff_removal', 'tariff_pause'].includes(tariff_action)) {
-    return { background: '#dcfce7', color: '#166534' };
+    return { background: 'rgba(20,83,45,0.4)', color: '#86efac' };
   }
-  return { background: '#f3f4f6', color: '#374151' };
+  return { background: 'rgba(255,255,255,0.06)', color: '#888' };
 }
 
 function certDots(level, tariff_action) {
@@ -27,7 +27,7 @@ function certDots(level, tariff_action) {
   const label = level <= 2 ? 'Speculative' : level <= 4 ? 'Likely' : 'Confirmed';
   const color = actionPillStyle(tariff_action).color;
   const dots = [1, 2, 3].map(i =>
-    `<span style="color:${i <= filled ? color : '#e5e7eb'}; font-size:10px;">●</span>`
+    `<span style="color:${i <= filled ? color : '#333'}; font-size:10px;">●</span>`
   ).join('');
   return `<span title="${label}" style="letter-spacing:2px">${dots}</span>`;
 }
@@ -42,14 +42,15 @@ export function mount(container, allClaims, options = {}) {
     .attr('id', 'feed-tooltip')
     .style('position', 'fixed')
     .style('display', 'none')
-    .style('background', 'white')
-    .style('border', '1px solid #e5e7eb')
-    .style('border-radius', '6px')
+    .style('background', '#111')
+    .style('border', '1px solid rgba(255,255,255,0.12)')
+    .style('border-radius', '4px')
     .style('padding', '12px 16px')
     .style('max-width', '360px')
-    .style('box-shadow', '0 4px 12px rgba(0,0,0,0.12)')
+    .style('box-shadow', 'none')
     .style('font-size', '13px')
     .style('line-height', '1.5')
+    .style('color', '#ccc')
     .style('z-index', '100')
     .style('pointer-events', 'auto');
 
@@ -166,19 +167,19 @@ export function mount(container, allClaims, options = {}) {
       tooltipTimeout = setTimeout(() => {
         const sourceLine = d.source_name
           ? (d.source_url
-              ? `<a href="${d.source_url}" target="_blank" style="color:#3b82f6">${d.source_name}</a>`
+              ? `<a href="${d.source_url}" target="_blank" style="color:#888">${d.source_name}</a>`
               : d.source_name)
           : '—';
         const dateLine = d.effective_date
-          ? `<div style="margin-top:6px;color:#6b7280;font-size:12px">Effective: ${d.effective_date}</div>`
+          ? `<div style="margin-top:6px;color:#555;font-size:12px">Effective: ${d.effective_date}</div>`
           : '';
         tooltip
           .style('display', 'block')
           .style('left', `${Math.min(rect.left, window.innerWidth - 380)}px`)
           .style('top', `${rect.bottom + 8}px`)
           .html(`
-            <div style="font-weight:500;margin-bottom:4px">${d.claim_text || '—'}</div>
-            <div style="color:#6b7280;font-size:12px">Source: ${sourceLine}</div>
+            <div style="font-weight:500;margin-bottom:4px;color:#e0e0e0">${d.claim_text || '—'}</div>
+            <div style="color:#555;font-size:12px">Source: ${sourceLine}</div>
             ${dateLine}
           `);
       }, 300);
