@@ -271,7 +271,7 @@ export function renderCells(container, data, scales, opts = {}) {
     .attr('fill', d => d.rate_pct && d.rate_pct > 50 ? blue(1) : 'var(--text)')
     .text(d => d.rate_pct !== null ? `${d.rate_pct}%` : '');
 
-  // Trend arrow (top-right corner)
+  // Trend arrow (top-right corner) — only render for up/down trends
   groups.selectAll('.cell-trend')
     .data(d => [d])
     .join('text')
@@ -281,13 +281,8 @@ export function renderCells(container, data, scales, opts = {}) {
     .attr('text-anchor', 'end')
     .attr('font-size', 9)
     .attr('font-weight', '700')
-    .attr('fill', d =>
-      d.trend === 'up' ? '#dc2626' :
-      d.trend === 'down' ? '#16a34a' : '#6b7280'
-    )
-    .text(d =>
-      d.trend === 'up' ? '↑' : d.trend === 'down' ? '↓' : '—'
-    );
+    .attr('fill', d => d.trend === 'up' ? '#dc2626' : '#16a34a')
+    .text(d => d.trend === 'up' ? '↑' : d.trend === 'down' ? '↓' : '');
 
   // Hover / click
   if (opts.onHover) {

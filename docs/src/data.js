@@ -338,7 +338,7 @@ export function buildAlertFeed(claims, weeks = 2) {
   cutoff.setDate(cutoff.getDate() - weeks * 7);
 
   const recent = claims
-    .filter(c => c.published_ts >= cutoff)
+    .filter(c => c.published_ts >= cutoff && !c.research_claim)
     .sort((a, b) => b.published_ts - a.published_ts);
 
   // Compute weekly baseline per country (90-day window)
