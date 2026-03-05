@@ -146,14 +146,30 @@ export function parseRate(claimText = '') {
 }
 
 /**
+ * Clean scraped text artifacts: spaced abbreviations, spaced punctuation, etc.
+ */
+function cleanText(text) {
+  if (!text) return text;
+  return text
+    .replace(/U\s*\.\s*S\s*\./gi, 'U.S.')   // "U . S ." → "U.S."
+    .replace(/(\d+)\s+(%)/g, '$1$2')          // "15 %" → "15%"
+    .replace(/\s{2,}/g, ' ')                  // collapse multiple spaces
+    .trim();
+}
+
+/**
  * Enrich a single claim with derived fields.
  */
 export function enrichClaim(claim) {
+  const subject = cleanText(claim.subject);
+  const claimText = cleanText(claim.claim_text);
   return {
     ...claim,
-    country:      parseCountry(claim.subject),
-    category:     parseCategory(claim.subject, claim.claim_text),
-    rate_pct:     parseRate(claim.claim_text),
+    subject,
+    claim_text:   claimText,
+    country:      parseCountry(subject),
+    category:     parseCategory(subject, claimText),
+    rate_pct:     parseRate(claimText),
     published_ts: new Date(claim.published_date),
     effective_ts: claim.effective_date ? new Date(claim.effective_date) : null,
     action_label: ACTION_LABELS[claim.tariff_action] || claim.tariff_action,
