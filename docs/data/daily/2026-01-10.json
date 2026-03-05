@@ -1,0 +1,24 @@
+[
+  {
+    "claim_id": "gdelt_20260110_0161",
+    "claim_text": "US official to raise Bangladesh tariff issue with Trump : CA Press Wing",
+    "subject": "US official to raise Bangladesh tariff issue with Trump : CA Press Wing",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.thedailystar.net/news/us-official-raise-bangladesh-tariff-issue-trump-ca-press-wing-4077626",
+    "source_name": "thedailystar.net",
+    "published_date": "2026-01-10",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from thedailystar.net via GDELT.",
+    "pedigree": {
+      "source_name": "thedailystar.net",
+      "source_category": "news_wire",
+      "source_url": "https://www.thedailystar.net/news/us-official-raise-bangladesh-tariff-issue-trump-ca-press-wing-4077626",
+      "published_date": "2026-01-10",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

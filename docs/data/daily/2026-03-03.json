@@ -1,0 +1,90 @@
+[
+  {
+    "claim_id": "fr_20260303_0040",
+    "claim_text": "Certain Freight Rail Couplers and Parts Thereof from India: Preliminary Affirmative Countervailing Duty Determination and Alignment of Final Determination with Final Antidumping Duty Determination. The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of certain freight rail couplers and parts thereof (freight rail couplers) from India. The period of investigation is April 1, 2024, through March 31, 2025. Interested parties are invited to comment on this preliminary determination.",
+    "subject": "Certain Freight Rail Couplers and Parts Thereof from India: Preliminary Affirmative Countervailing Duty Determination and Alignment of Final Determination with Final Antidumping Duty Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/03/03/2026-04197/certain-freight-rail-couplers-and-parts-thereof-from-india-preliminary-affirmative-countervailing",
+    "source_name": "Federal Register",
+    "published_date": "2026-03-03",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-04197.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/03/03/2026-04197/certain-freight-rail-couplers-and-parts-thereof-from-india-preliminary-affirmative-countervailing",
+      "published_date": "2026-03-03",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "gdelt_20260303_0035",
+    "claim_text": "Sri Lanka after IEEPA : Navigating tariffs in a volatile US trade environment",
+    "subject": "Sri Lanka after IEEPA : Navigating tariffs in a volatile US trade environment",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.ft.lk/columns/Sri-Lanka-after-IEEPA-Navigating-tariffs-in-a-volatile-US-trade-environment/4-789003",
+    "source_name": "ft.lk",
+    "published_date": "2026-03-03",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from ft.lk via GDELT.",
+    "pedigree": {
+      "source_name": "ft.lk",
+      "source_category": "news_wire",
+      "source_url": "https://www.ft.lk/columns/Sri-Lanka-after-IEEPA-Navigating-tariffs-in-a-volatile-US-trade-environment/4-789003",
+      "published_date": "2026-03-03",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  },
+  {
+    "claim_id": "gdelt_20260303_0113",
+    "claim_text": "Sri Lanka after IEEPA : Navigating tariffs in a volatile US trade environment",
+    "subject": "Sri Lanka after IEEPA : Navigating tariffs in a volatile US trade environment",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://island.lk/sri-lanka-after-ieepa-navigating-tariffs-in-a-volatile-us-trade-environment/",
+    "source_name": "island.lk",
+    "published_date": "2026-03-03",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from island.lk via GDELT.",
+    "pedigree": {
+      "source_name": "island.lk",
+      "source_category": "news_wire",
+      "source_url": "https://island.lk/sri-lanka-after-ieepa-navigating-tariffs-in-a-volatile-us-trade-environment/",
+      "published_date": "2026-03-03",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  },
+  {
+    "claim_id": "gdelt_20260303_0212",
+    "claim_text": "Trade deal waiting on US move , premier says",
+    "subject": "Trade deal waiting on US move , premier says",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.taipeitimes.com/News/taiwan/archives/2026/03/04/2003853237",
+    "source_name": "taipeitimes.com",
+    "published_date": "2026-03-03",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from taipeitimes.com via GDELT.",
+    "pedigree": {
+      "source_name": "taipeitimes.com",
+      "source_category": "news_wire",
+      "source_url": "https://www.taipeitimes.com/News/taiwan/archives/2026/03/04/2003853237",
+      "published_date": "2026-03-03",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

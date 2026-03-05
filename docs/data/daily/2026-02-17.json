@@ -1,0 +1,68 @@
+[
+  {
+    "claim_id": "fr_20260217_0071",
+    "claim_text": "Active Anode Material From the People's Republic of China: Final Affirmative Countervailing Duty Determination. The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of active anode material from the People's Republic of China (China). The period of investigation (POI) is January 1, 2023, through December 31, 2023.",
+    "subject": "Active Anode Material From the People's Republic of China: Final Affirmative Countervailing Duty Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/17/2026-02999/active-anode-material-from-the-peoples-republic-of-china-final-affirmative-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-17",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02999.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/17/2026-02999/active-anode-material-from-the-peoples-republic-of-china-final-affirmative-countervailing-duty",
+      "published_date": "2026-02-17",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260217_0094",
+    "claim_text": "Citric Acid and Certain Citrate Salts From Canada and India: Initiation of Countervailing Duty Investigations",
+    "subject": "Citric Acid and Certain Citrate Salts From Canada and India: Initiation of Countervailing Duty Investigations",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/17/2026-03060/citric-acid-and-certain-citrate-salts-from-canada-and-india-initiation-of-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-17",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-03060.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/17/2026-03060/citric-acid-and-certain-citrate-salts-from-canada-and-india-initiation-of-countervailing-duty",
+      "published_date": "2026-02-17",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260217_0106",
+    "claim_text": "Common Alloy Aluminum Sheet From the Kingdom of Bahrain: Final Results of Antidumping Duty Administrative Review; 2023-2024. The U.S. Department of Commerce (Commerce) finds that Gulf Aluminium Rolling Mill B.S.C. (GARMCO) subject to this administrative review made sales of common alloy aluminum sheet (aluminum sheet) from the Kingdom of Bahrain (Bahrain) at less than normal value during the period of review (POR) April 1, 2023, through March 31, 2024.",
+    "subject": "Common Alloy Aluminum Sheet From the Kingdom of Bahrain: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/17/2026-02984/common-alloy-aluminum-sheet-from-the-kingdom-of-bahrain-final-results-of-antidumping-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-17",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02984.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/17/2026-02984/common-alloy-aluminum-sheet-from-the-kingdom-of-bahrain-final-results-of-antidumping-duty",
+      "published_date": "2026-02-17",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

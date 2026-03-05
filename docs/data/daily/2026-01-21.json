@@ -1,0 +1,24 @@
+[
+  {
+    "claim_id": "fr_20260121_0107",
+    "claim_text": "Certain Uncoated Paper From Brazil: Final Results of Antidumping Duty Administrative Review; 2023-2024. The U.S. Department of Commerce (Commerce) determines that Suzano S.A. (Suzano) made sales of subject merchandise at prices below normal value (NV) during the period of review (POR) March 1, 2023, through February 29, 2024.",
+    "subject": "Certain Uncoated Paper From Brazil: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/21/2026-01025/certain-uncoated-paper-from-brazil-final-results-of-antidumping-duty-administrative-review-2023-2024",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-21",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-01025.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/21/2026-01025/certain-uncoated-paper-from-brazil-final-results-of-antidumping-duty-administrative-review-2023-2024",
+      "published_date": "2026-01-21",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

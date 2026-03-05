@@ -1,0 +1,46 @@
+[
+  {
+    "claim_id": "fr_20260227_0010",
+    "claim_text": "Oil Country Tubular Goods From the People's Republic of China: Final Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders. The U.S. Department of Commerce (Commerce) determines that imports of seamless oil country tubular goods (OCTG) completed in Thailand using steel billets produced in the People's Republic of China (China) are circumventing the antidumping duty (AD) and countervailing duty (CVD) orders on OCTG from China.",
+    "subject": "Oil Country Tubular Goods From the People's Republic of China: Final Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/27/2026-03972/oil-country-tubular-goods-from-the-peoples-republic-of-china-final-affirmative-determination-of",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-27",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-03972.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/27/2026-03972/oil-country-tubular-goods-from-the-peoples-republic-of-china-final-affirmative-determination-of",
+      "published_date": "2026-02-27",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260227_0014",
+    "claim_text": "Large Diameter Graphite Electrodes From China and India; Institution of Antidumping and Countervailing Duty Investigations and Scheduling of Preliminary Phase Investigations. The Commission hereby gives notice of the institution of investigations and commencement of preliminary phase antidumping and countervailing duty investigation Nos. 701-TA-787-788 and 731-TA-1775- 1776 (Preliminary) pursuant to the Tariff Act of 1930 to determine whether there is a reasonable indication that an industry in the United States is materially injured or threatened with material injury,",
+    "subject": "Large Diameter Graphite Electrodes From China and India; Institution of Antidumping and Countervailing Duty Investigations and Scheduling of Preliminary Phase Investigations",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/27/2026-03954/large-diameter-graphite-electrodes-from-china-and-india-institution-of-antidumping-and",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-27",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-03954.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/27/2026-03954/large-diameter-graphite-electrodes-from-china-and-india-institution-of-antidumping-and",
+      "published_date": "2026-02-27",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

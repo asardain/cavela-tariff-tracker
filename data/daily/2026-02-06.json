@@ -1,0 +1,68 @@
+[
+  {
+    "claim_id": "fr_20260206_0000",
+    "claim_text": "Fiberglass Door Panels From China; Scheduling of the Final Phase of Countervailing Duty and Antidumping Duty Investigations. The Commission hereby gives notice of the scheduling of the final phase of antidumping and countervailing duty investigation Nos. 701-TA-758 and 731-TA-1739 (Final) pursuant to the Tariff Act of 1930 to determine whether an industry in the United States is materially injured or threatened with material injury, or the establishment of an industry in the United States is materially retarded, by reas",
+    "subject": "Fiberglass Door Panels From China; Scheduling of the Final Phase of Countervailing Duty and Antidumping Duty Investigations",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02403/fiberglass-door-panels-from-china-scheduling-of-the-final-phase-of-countervailing-duty-and",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-06",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02403.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02403/fiberglass-door-panels-from-china-scheduling-of-the-final-phase-of-countervailing-duty-and",
+      "published_date": "2026-02-06",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260206_0007",
+    "claim_text": "Collated Steel Staples From the People's Republic of China: Continuation of Antidumping Duty Order and Countervailing Duty Order. As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) order and the countervailing duty (CVD) order on collated steel staples from the People's Republic of China would likely lead to the continuation or recurrence of dumping, countervailable subsidies, and material injury to an ",
+    "subject": "Collated Steel Staples From the People's Republic of China: Continuation of Antidumping Duty Order and Countervailing Duty Order",
+    "tariff_action": "tariff_removal",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02382/collated-steel-staples-from-the-peoples-republic-of-china-continuation-of-antidumping-duty-order-and",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-06",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02382.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02382/collated-steel-staples-from-the-peoples-republic-of-china-continuation-of-antidumping-duty-order-and",
+      "published_date": "2026-02-06",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260206_0048",
+    "claim_text": "Oleoresin Paprika From India: Preliminary Affirmative Countervailing Duty Determination, Preliminary Affirmative Critical Circumstances Determination, In Part, and Alignment of Final Determination With Final Antidumping Duty Determination. The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of oleoresin paprika from India. The period of investigation is April 1, 2024, through March 31, 2025. Interested parties are invited to comment on this preliminary determination.",
+    "subject": "Oleoresin Paprika From India: Preliminary Affirmative Countervailing Duty Determination, Preliminary Affirmative Critical Circumstances Determination, In Part, and Alignment of Final Determination Wit",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02345/oleoresin-paprika-from-india-preliminary-affirmative-countervailing-duty-determination-preliminary",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-06",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-02345.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/06/2026-02345/oleoresin-paprika-from-india-preliminary-affirmative-countervailing-duty-determination-preliminary",
+      "published_date": "2026-02-06",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  }
+]

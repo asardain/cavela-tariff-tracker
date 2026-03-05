@@ -1,0 +1,24 @@
+[
+  {
+    "claim_id": "gdelt_20260104_0162",
+    "claim_text": "Electronics exemption from 19 % US tariff seen limiting GDP impact",
+    "subject": "Electronics exemption from 19 % US tariff seen limiting GDP impact",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.bworldonline.com/economy/2026/01/04/722204/electronics-exemption-from-19-us-tariff-seen-limiting-gdp-impact/",
+    "source_name": "bworldonline.com",
+    "published_date": "2026-01-04",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from bworldonline.com via GDELT.",
+    "pedigree": {
+      "source_name": "bworldonline.com",
+      "source_category": "news_wire",
+      "source_url": "https://www.bworldonline.com/economy/2026/01/04/722204/electronics-exemption-from-19-us-tariff-seen-limiting-gdp-impact/",
+      "published_date": "2026-01-04",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

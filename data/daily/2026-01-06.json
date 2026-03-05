@@ -1,0 +1,68 @@
+[
+  {
+    "claim_id": "fr_20260106_0092",
+    "claim_text": "Paper File Folders From Cambodia; Supplemental Schedule for the Final Phase of a Countervailing Duty Investigation",
+    "subject": "Paper File Folders From Cambodia; Supplemental Schedule for the Final Phase of a Countervailing Duty Investigation",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/06/2025-24284/paper-file-folders-from-cambodia-supplemental-schedule-for-the-final-phase-of-a-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-06",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2025-24284.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/06/2025-24284/paper-file-folders-from-cambodia-supplemental-schedule-for-the-final-phase-of-a-countervailing-duty",
+      "published_date": "2026-01-06",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "gdelt_20260106_0024",
+    "claim_text": "Rebate Checks Could Help Some Taxpayers Cope With Tariff Costs",
+    "subject": "Rebate Checks Could Help Some Taxpayers Cope With Tariff Costs",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.investopedia.com/rebate-checks-could-help-some-taxpayers-cope-with-tariff-costs-11878933",
+    "source_name": "investopedia.com",
+    "published_date": "2026-01-06",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from investopedia.com via GDELT.",
+    "pedigree": {
+      "source_name": "investopedia.com",
+      "source_category": "news_wire",
+      "source_url": "https://www.investopedia.com/rebate-checks-could-help-some-taxpayers-cope-with-tariff-costs-11878933",
+      "published_date": "2026-01-06",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  },
+  {
+    "claim_id": "gdelt_20260106_0071",
+    "claim_text": "Pakistan to compile data for targeted tariffs",
+    "subject": "Pakistan to compile data for targeted tariffs",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://tribune.com.pk/story/2585683/govt-to-assess-impact-of-tariff-revision",
+    "source_name": "tribune.com.pk",
+    "published_date": "2026-01-06",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from tribune.com.pk via GDELT.",
+    "pedigree": {
+      "source_name": "tribune.com.pk",
+      "source_category": "news_wire",
+      "source_url": "https://tribune.com.pk/story/2585683/govt-to-assess-impact-of-tariff-revision",
+      "published_date": "2026-01-06",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

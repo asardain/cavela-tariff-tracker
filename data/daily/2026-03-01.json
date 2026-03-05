@@ -1,0 +1,46 @@
+[
+  {
+    "claim_id": "gdelt_20260301_0109",
+    "claim_text": "Trump Tariff Turmoil , Citrini AI Crisis , Global Trade Reset And More : This Week In Economy",
+    "subject": "Trump Tariff Turmoil , Citrini AI Crisis , Global Trade Reset And More : This Week In Economy",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.benzinga.com/markets/macro-economic-events/26/03/50954077/trumps-tariff-turmoil-citrinis-ai-crisis-global-trade-reset-and-more-this-week-in-economy",
+    "source_name": "benzinga.com",
+    "published_date": "2026-03-01",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from benzinga.com via GDELT.",
+    "pedigree": {
+      "source_name": "benzinga.com",
+      "source_category": "news_wire",
+      "source_url": "https://www.benzinga.com/markets/macro-economic-events/26/03/50954077/trumps-tariff-turmoil-citrinis-ai-crisis-global-trade-reset-and-more-this-week-in-economy",
+      "published_date": "2026-03-01",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  },
+  {
+    "claim_id": "gdelt_20260301_0147",
+    "claim_text": "Trump tariffs have gutted Agoa duty \u2011 free promise : our model shows how",
+    "subject": "Trump tariffs have gutted Agoa duty \u2011 free promise : our model shows how",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://theconversation.com/trumps-tariffs-have-gutted-agoas-duty-free-promise-our-model-shows-how-276641",
+    "source_name": "theconversation.com",
+    "published_date": "2026-03-01",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from theconversation.com via GDELT.",
+    "pedigree": {
+      "source_name": "theconversation.com",
+      "source_category": "news_wire",
+      "source_url": "https://theconversation.com/trumps-tariffs-have-gutted-agoas-duty-free-promise-our-model-shows-how-276641",
+      "published_date": "2026-03-01",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

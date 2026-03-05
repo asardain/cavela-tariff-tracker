@@ -1,0 +1,112 @@
+[
+  {
+    "claim_id": "fr_20260202_0012",
+    "claim_text": "Fatty Acids From Indonesia and Malaysia; Institution of Antidumping and Countervailing Duty Investigations and Scheduling of Preliminary Phase Investigations. The Commission hereby gives notice of the institution of investigations and commencement of preliminary phase antidumping and countervailing duty investigation Nos. 701-TA-785-786 and 731-TA-1773- 1774 (Preliminary) pursuant to the Tariff Act of 1930 to determine whether there is a reasonable indication that an industry in the United States is materially injured or threatened with material injury,",
+    "subject": "Fatty Acids From Indonesia and Malaysia; Institution of Antidumping and Countervailing Duty Investigations and Scheduling of Preliminary Phase Investigations",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-01950/fatty-acids-from-indonesia-and-malaysia-institution-of-antidumping-and-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-02",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-01950.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-01950/fatty-acids-from-indonesia-and-malaysia-institution-of-antidumping-and-countervailing-duty",
+      "published_date": "2026-02-02",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260202_0042",
+    "claim_text": "Corrosion Inhibitors From China; Institution of Five-Year Reviews. The Commission hereby gives notice that it has instituted reviews pursuant to the Tariff Act of 1930 (\"the Act\"), as amended, to determine whether revocation of the antidumping and countervailing duty orders on corrosion inhibitors from China would be likely to lead to continuation or recurrence of material injury. Pursuant to the Act, interested parties are requested to respond to this notice by ",
+    "subject": "Corrosion Inhibitors From China; Institution of Five-Year Reviews",
+    "tariff_action": "tariff_removal",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-02045/corrosion-inhibitors-from-china-institution-of-five-year-reviews",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-02",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02045.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-02045/corrosion-inhibitors-from-china-institution-of-five-year-reviews",
+      "published_date": "2026-02-02",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260202_0045",
+    "claim_text": "Large Vertical Shaft Engines From China; Institution of Five-Year Reviews. The Commission hereby gives notice that it has instituted reviews pursuant to the Tariff Act of 1930 (\"the Act\"), as amended, to determine whether revocation of the countervailing and antidumping duty orders on large vertical shaft engines from China would be likely to lead to continuation or recurrence of material injury. Pursuant to the Act, interested parties are requested to respond to this no",
+    "subject": "Large Vertical Shaft Engines From China; Institution of Five-Year Reviews",
+    "tariff_action": "tariff_removal",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-02044/large-vertical-shaft-engines-from-china-institution-of-five-year-reviews",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-02",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02044.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-02044/large-vertical-shaft-engines-from-china-institution-of-five-year-reviews",
+      "published_date": "2026-02-02",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260202_0091",
+    "claim_text": "Antidumping or Countervailing Duty Order, Finding, or Suspended Investigation; Opportunity To Request Administrative Review and Join Annual Inquiry Service List",
+    "subject": "Antidumping or Countervailing Duty Order, Finding, or Suspended Investigation; Opportunity To Request Administrative Review and Join Annual Inquiry Service List",
+    "tariff_action": "tariff_pause",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-02082/antidumping-or-countervailing-duty-order-finding-or-suspended-investigation-opportunity-to-request",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-02",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02082.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/02/2026-02082/antidumping-or-countervailing-duty-order-finding-or-suspended-investigation-opportunity-to-request",
+      "published_date": "2026-02-02",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "gdelt_20260202_0174",
+    "claim_text": "NEPRA approves government request to maintain basic electricity tariff nationwide",
+    "subject": "NEPRA approves government request to maintain basic electricity tariff nationwide",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://en.dailypakistan.com.pk/02-Feb-2026/nepra-approves-government-request-to-maintain-basic-electricity-tariff-nationwide-2",
+    "source_name": "en.dailypakistan.com.pk",
+    "published_date": "2026-02-02",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from en.dailypakistan.com.pk via GDELT.",
+    "pedigree": {
+      "source_name": "en.dailypakistan.com.pk",
+      "source_category": "news_wire",
+      "source_url": "https://en.dailypakistan.com.pk/02-Feb-2026/nepra-approves-government-request-to-maintain-basic-electricity-tariff-nationwide-2",
+      "published_date": "2026-02-02",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

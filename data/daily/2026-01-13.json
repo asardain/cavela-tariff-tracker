@@ -1,0 +1,68 @@
+[
+  {
+    "claim_id": "fr_20260113_0039",
+    "claim_text": "Steel Concrete Reinforcing Bar From Egypt: Preliminary Affirmative Countervailing Duty Determination, and Alignment of Final Determination With Final Antidumping Duty Determination. The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of steel concrete reinforcing bar (rebar) from Egypt. The period of investigation is January 1, 2024, through December 31, 2024. Interested parties are invited to comment on this preliminary determination.",
+    "subject": "Steel Concrete Reinforcing Bar From Egypt: Preliminary Affirmative Countervailing Duty Determination, and Alignment of Final Determination With Final Antidumping Duty Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/13/2026-00494/steel-concrete-reinforcing-bar-from-egypt-preliminary-affirmative-countervailing-duty-determination",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-13",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-00494.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/13/2026-00494/steel-concrete-reinforcing-bar-from-egypt-preliminary-affirmative-countervailing-duty-determination",
+      "published_date": "2026-01-13",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "fr_20260113_0046",
+    "claim_text": "Steel Concrete Reinforcing Bar From the Socialist Republic of Vietnam: Preliminary Affirmative Countervailing Duty Determination and Alignment of Final Determination With Final Antidumping Duty Determination. The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of steel concrete reinforcing bar (rebar) from the Socialist Republic of Vietnam (Vietnam) during the period of investigation, January 1, 2024, through December 31, 2024. Interested parties are invited to comment on this preliminary determination",
+    "subject": "Steel Concrete Reinforcing Bar From the Socialist Republic of Vietnam: Preliminary Affirmative Countervailing Duty Determination and Alignment of Final Determination With Final Antidumping Duty Determ",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/13/2026-00495/steel-concrete-reinforcing-bar-from-the-socialist-republic-of-vietnam-preliminary-affirmative",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-13",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-00495.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/13/2026-00495/steel-concrete-reinforcing-bar-from-the-socialist-republic-of-vietnam-preliminary-affirmative",
+      "published_date": "2026-01-13",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "fr_20260113_0069",
+    "claim_text": "Steel Concrete Reinforcing Bar From Algeria: Preliminary Affirmative Countervailing Duty Determination. The U.S. Department of Commerce (Commerce) preliminarily determines that countervailable subsidies are being provided to producers and exporters of steel concrete reinforcing bar (rebar) from Algeria. The period of investigation (POI) is January 1, 2024, through December 31, 2024. Interested parties are invited to comment on this preliminary determination.",
+    "subject": "Steel Concrete Reinforcing Bar From Algeria: Preliminary Affirmative Countervailing Duty Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/13/2026-00493/steel-concrete-reinforcing-bar-from-algeria-preliminary-affirmative-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-13",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-00493.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/13/2026-00493/steel-concrete-reinforcing-bar-from-algeria-preliminary-affirmative-countervailing-duty",
+      "published_date": "2026-01-13",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

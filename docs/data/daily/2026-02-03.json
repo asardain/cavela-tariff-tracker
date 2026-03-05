@@ -1,0 +1,46 @@
+[
+  {
+    "claim_id": "fr_20260203_0013",
+    "claim_text": "Circular Welded Carbon Quality Steel Pipe From the People's Republic of China: Final Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders. The U.S. Department of Commerce (Commerce) determines that imports of circular welded carbon quality steel pipe (CWP) completed in the Sultanate of Oman (Oman) using hot-rolled steel (HRS) produced in the People's Republic of China (China) are circumventing the antidumping duty (AD) and countervailing duty (CVD) orders on CWP from China.",
+    "subject": "Circular Welded Carbon Quality Steel Pipe From the People's Republic of China: Final Affirmative Determination of Circumvention of the Antidumping Duty and Countervailing Duty Orders",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/03/2026-02104/circular-welded-carbon-quality-steel-pipe-from-the-peoples-republic-of-china-final-affirmative",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-03",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02104.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/03/2026-02104/circular-welded-carbon-quality-steel-pipe-from-the-peoples-republic-of-china-final-affirmative",
+      "published_date": "2026-02-03",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260203_0143",
+    "claim_text": "Certain Monomers and Oligomers From Taiwan: Final Affirmative Determination of Sales at Less Than Fair Value and Final Affirmative Critical Circumstances Determination. The U.S. Department of Commerce (Commerce) determines that certain monomers and oligomers (monomers and oligomers) from Taiwan are being, or are likely to be, sold in the United States at less than fair value (LTFV) and determines that critical circumstances existed with respect to imports of subject merchandise from Taiwan. The period of investigation (POI) is January 1, 2024, through December 31",
+    "subject": "Certain Monomers and Oligomers From Taiwan: Final Affirmative Determination of Sales at Less Than Fair Value and Final Affirmative Critical Circumstances Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/03/2026-02123/certain-monomers-and-oligomers-from-taiwan-final-affirmative-determination-of-sales-at-less-than",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-03",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02123.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/03/2026-02123/certain-monomers-and-oligomers-from-taiwan-final-affirmative-determination-of-sales-at-less-than",
+      "published_date": "2026-02-03",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

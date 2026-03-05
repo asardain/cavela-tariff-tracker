@@ -1,0 +1,24 @@
+[
+  {
+    "claim_id": "fr_20260112_0067",
+    "claim_text": "Overhead Door Counterbalance Torsion Springs From India; Scheduling of the Final Phase of the Antidumping and Countervailing Duty Investigations",
+    "subject": "Overhead Door Counterbalance Torsion Springs From India; Scheduling of the Final Phase of the Antidumping and Countervailing Duty Investigations",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/12/2026-00347/overhead-door-counterbalance-torsion-springs-from-india-scheduling-of-the-final-phase-of-the",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-12",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-00347.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/12/2026-00347/overhead-door-counterbalance-torsion-springs-from-india-scheduling-of-the-final-phase-of-the",
+      "published_date": "2026-01-12",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

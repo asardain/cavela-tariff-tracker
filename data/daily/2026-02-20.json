@@ -1,0 +1,90 @@
+[
+  {
+    "claim_id": "fr_20260220_0022",
+    "claim_text": "Initiation of Antidumping and Countervailing Duty Administrative Reviews. The U.S. Department of Commerce (Commerce) has received requests to conduct administrative reviews of various antidumping duty (AD) and countervailing duty (CVD) orders with December anniversary dates. In accordance with Commerce's regulations, we are initiating those administrative reviews.",
+    "subject": "Initiation of Antidumping and Countervailing Duty Administrative Reviews",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03417/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-03417.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03417/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+      "published_date": "2026-02-20",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260220_0028",
+    "claim_text": "Paper File Folders From the Kingdom of Cambodia: Countervailing Duty Order. Based on affirmative final determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC), Commerce is issuing a countervailing duty (CVD) order on paper file folders from the Kingdom of Cambodia (Cambodia).",
+    "subject": "Paper File Folders From the Kingdom of Cambodia: Countervailing Duty Order",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03419/paper-file-folders-from-the-kingdom-of-cambodia-countervailing-duty-order",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-03419.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03419/paper-file-folders-from-the-kingdom-of-cambodia-countervailing-duty-order",
+      "published_date": "2026-02-20",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "fr_20260220_0059",
+    "claim_text": "Steel Concrete Reinforcing Bar From Mexico: Amended Final Results of Antidumping Duty Administrative Review; 2022-2023. The U.S. Department of Commerce (Commerce) is amending the final results of the administrative review of the antidumping duty (AD) order on steel concrete reinforcing bar (rebar) from Mexico to correct certain ministerial errors. The period of review (POR) is November 1, 2022, through October 31, 2023.",
+    "subject": "Steel Concrete Reinforcing Bar From Mexico: Amended Final Results of Antidumping Duty Administrative Review; 2022-2023",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03339/steel-concrete-reinforcing-bar-from-mexico-amended-final-results-of-antidumping-duty-administrative",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-03339.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03339/steel-concrete-reinforcing-bar-from-mexico-amended-final-results-of-antidumping-duty-administrative",
+      "published_date": "2026-02-20",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260220_0087",
+    "claim_text": "Certain Cut-To-Length Carbon-Quality Steel Plate From the Republic of Korea: Final Results of Countervailing Duty Administrative Review; 2023. The U.S. Department of Commerce (Commerce) determines that certain producers and exporters of certain cut-to-length carbon-quality steel plate (CTL plate) from the Republic of Korea (Korea) received countervailable subsidies during the period of review (POR) January 1, 2023, through December 31, 2023.",
+    "subject": "Certain Cut-To-Length Carbon-Quality Steel Plate From the Republic of Korea: Final Results of Countervailing Duty Administrative Review; 2023",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03418/certain-cut-to-length-carbon-quality-steel-plate-from-the-republic-of-korea-final-results-of",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-20",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-03418.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/20/2026-03418/certain-cut-to-length-carbon-quality-steel-plate-from-the-republic-of-korea-final-results-of",
+      "published_date": "2026-02-20",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

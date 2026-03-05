@@ -1,0 +1,68 @@
+[
+  {
+    "claim_id": "fr_20260209_0054",
+    "claim_text": "Float Glass Products From Malaysia: Final Affirmative Countervailing Duty Determination. The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of float glass products (float glass) from Malaysia. The period of investigation is January 1, 2023, through December 31, 2023.",
+    "subject": "Float Glass Products From Malaysia: Final Affirmative Countervailing Duty Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/09/2026-02491/float-glass-products-from-malaysia-final-affirmative-countervailing-duty-determination",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-09",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02491.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/09/2026-02491/float-glass-products-from-malaysia-final-affirmative-countervailing-duty-determination",
+      "published_date": "2026-02-09",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260209_0074",
+    "claim_text": "Float Glass Products From the People's Republic of China: Final Affirmative Countervailing Duty Determination. The U.S. Department of Commerce (Commerce) determines that countervailable subsidies are being provided to producers and exporters of float glass products (float glass) from the People's Republic of China (China). The period of investigation is January 1, 2023, through December 31, 2023.",
+    "subject": "Float Glass Products From the People's Republic of China: Final Affirmative Countervailing Duty Determination",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/09/2026-02493/float-glass-products-from-the-peoples-republic-of-china-final-affirmative-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-09",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02493.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/09/2026-02493/float-glass-products-from-the-peoples-republic-of-china-final-affirmative-countervailing-duty",
+      "published_date": "2026-02-09",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260209_0131",
+    "claim_text": "Certain Frozen Warmwater Shrimp From India: Final Results of Antidumping Duty Administrative Review; 2023-2024. The U.S. Department of Commerce (Commerce) determines that producers/exporters subject to this administrative review made sales of subject merchandise at less than normal value during the period of review (POR), February 1, 2023, through January 31, 2024.",
+    "subject": "Certain Frozen Warmwater Shrimp From India: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/09/2026-02486/certain-frozen-warmwater-shrimp-from-india-final-results-of-antidumping-duty-administrative-review",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-09",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-02486.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/09/2026-02486/certain-frozen-warmwater-shrimp-from-india-final-results-of-antidumping-duty-administrative-review",
+      "published_date": "2026-02-09",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  }
+]

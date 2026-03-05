@@ -1,0 +1,178 @@
+[
+  {
+    "claim_id": "fr_20260105_0018",
+    "claim_text": "Initiation of Antidumping and Countervailing Duty Administrative Reviews. The U.S. Department of Commerce (Commerce) has received requests to conduct administrative reviews of various antidumping duty (AD) and countervailing duty (CVD) orders with October anniversary dates. In accordance with Commerce's regulations, we are initiating those administrative reviews.",
+    "subject": "Initiation of Antidumping and Countervailing Duty Administrative Reviews",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24273/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2025-24273.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24273/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260105_0024",
+    "claim_text": "Notice of Scope Ruling Applications Filed in Antidumping and Countervailing Duty Proceedings. The U.S. Department of Commerce (Commerce) received scope ruling applications, requesting that scope inquiries be conducted to determine whether identified products are covered by the scope of antidumping duty (AD) and/or countervailing duty (CVD) orders and that Commerce issue scope rulings pursuant to those inquiries. In accordance with Commerce's regulations, we are notifying the public of the ",
+    "subject": "Scope Ruling Applications Filed in Antidumping and Countervailing Duty Proceedings",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24278/notice-of-scope-ruling-applications-filed-in-antidumping-and-countervailing-duty-proceedings",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2025-24278.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24278/notice-of-scope-ruling-applications-filed-in-antidumping-and-countervailing-duty-proceedings",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260105_0025",
+    "claim_text": "Notice of Scope Ruling Applications Filed in Antidumping and Countervailing Duty Proceedings. The U.S. Department of Commerce (Commerce) received scope ruling applications, requesting that scope inquiries be conducted to determine whether identified products are covered by the scope of antidumping duty (AD) and/or countervailing duty (CVD) orders and that Commerce issue scope rulings pursuant to those inquiries. In accordance with Commerce's regulations, we are notifying the public of the ",
+    "subject": "Scope Ruling Applications Filed in Antidumping and Countervailing Duty Proceedings",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24279/notice-of-scope-ruling-applications-filed-in-antidumping-and-countervailing-duty-proceedings",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2025-24279.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24279/notice-of-scope-ruling-applications-filed-in-antidumping-and-countervailing-duty-proceedings",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260105_0089",
+    "claim_text": "Chromium Trioxide From India: Initiation of Countervailing Duty Investigation",
+    "subject": "Chromium Trioxide From India: Initiation of Countervailing Duty Investigation",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24223/chromium-trioxide-from-india-initiation-of-countervailing-duty-investigation",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2025-24223.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24223/chromium-trioxide-from-india-initiation-of-countervailing-duty-investigation",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260105_0090",
+    "claim_text": "Notice of Extension of the Deadline for Determining the Adequacy of the Antidumping and Countervailing Duty Petitions: Certain Van-Type Trailers and Subassemblies Thereof From Canada, Mexico, and the People's Republic of China",
+    "subject": "Extension of the Deadline for Determining the Adequacy of the Antidumping and Countervailing Duty Petitions: Certain Van-Type Trailers and Subassemblies Thereof From Canada, Mexico, and the People's R",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24281/notice-of-extension-of-the-deadline-for-determining-the-adequacy-of-the-antidumping-and",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2025-24281.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24281/notice-of-extension-of-the-deadline-for-determining-the-adequacy-of-the-antidumping-and",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260105_0142",
+    "claim_text": "Tapered Roller Bearings and Parts Thereof, Finished and Unfinished, From the People's Republic of China: Final Results and Final Determination of No Shipments of Antidumping Duty Administrative Review; 2023-2024. The U.S. Department of Commerce (Commerce) determines that C&U Group Shanghai Bearing Co., Ltd. (C&U Shanghai) did not qualify for a separate rate, and therefore, is considered part of the People's Republic of China (China)-wide entity. Additionally, Commerce determines that Shanghai Tainai Bearing Co., Ltd. (Tainai) had no shipments of subject merchandise during the period of review ",
+    "subject": "Tapered Roller Bearings and Parts Thereof, Finished and Unfinished, From the People's Republic of China: Final Results and Final Determination of No Shipments of Antidumping Duty Administrative Review",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24271/tapered-roller-bearings-and-parts-thereof-finished-and-unfinished-from-the-peoples-republic-of-china",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2025-24271.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/05/2025-24271/tapered-roller-bearings-and-parts-thereof-finished-and-unfinished-from-the-peoples-republic-of-china",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "gdelt_20260105_0089",
+    "claim_text": "White House delays furniture tariff increases for a year",
+    "subject": "White House delays furniture tariff increases for a year",
+    "tariff_action": "tariff_increase",
+    "effective_date": null,
+    "source_url": "https://www.retaildive.com/news/furniture-cabinets-tariffs-delay-trump-administration/808704/",
+    "source_name": "retaildive.com",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from retaildive.com via GDELT.",
+    "pedigree": {
+      "source_name": "retaildive.com",
+      "source_category": "news_wire",
+      "source_url": "https://www.retaildive.com/news/furniture-cabinets-tariffs-delay-trump-administration/808704/",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  },
+  {
+    "claim_id": "gdelt_20260105_0137",
+    "claim_text": "Why havent Trump tariffs had a bigger impact ? ",
+    "subject": "Why havent Trump tariffs had a bigger impact ? ",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.theglobeandmail.com/investing/article-why-havent-trumps-tariffs-had-a-bigger-impact/",
+    "source_name": "theglobeandmail.com",
+    "published_date": "2026-01-05",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from theglobeandmail.com via GDELT.",
+    "pedigree": {
+      "source_name": "theglobeandmail.com",
+      "source_category": "news_wire",
+      "source_url": "https://www.theglobeandmail.com/investing/article-why-havent-trumps-tariffs-had-a-bigger-impact/",
+      "published_date": "2026-01-05",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

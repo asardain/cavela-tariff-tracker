@@ -1,0 +1,24 @@
+[
+  {
+    "claim_id": "fr_20260225_0144",
+    "claim_text": "Continuing the Suspension of Duty-Free De Minimis Treatment for All Countries",
+    "subject": "Continuing the Suspension of Duty-Free De Minimis Treatment for All Countries",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/02/25/2026-03829/continuing-the-suspension-of-duty-free-de-minimis-treatment-for-all-countries",
+    "source_name": "Federal Register",
+    "published_date": "2026-02-25",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "certainty_rationale": "Federal Register Presidential Document document #2026-03829.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/02/25/2026-03829/continuing-the-suspension-of-duty-free-de-minimis-treatment-for-all-countries",
+      "published_date": "2026-02-25",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 3
+    }
+  }
+]

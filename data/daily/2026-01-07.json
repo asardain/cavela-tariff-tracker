@@ -1,0 +1,90 @@
+[
+  {
+    "claim_id": "fr_20260107_0026",
+    "claim_text": "Hexamethylenetetramine From India: Countervailing Duty Order. Based on affirmative final determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC), Commerce is issuing a countervailing duty (CVD) order on hexamethylenetetramine (hexamine) from India.",
+    "subject": "Hexamethylenetetramine From India: Countervailing Duty Order",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/07/2026-00093/hexamethylenetetramine-from-india-countervailing-duty-order",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-07",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-00093.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/07/2026-00093/hexamethylenetetramine-from-india-countervailing-duty-order",
+      "published_date": "2026-01-07",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "fr_20260107_0036",
+    "claim_text": "Hexamethylenetetramine From the Kingdom of Saudi Arabia (Saudi Arabia): Amended Final Antidumping Duty Determination; Hexamethylenetetramine From Germany, India, and Saudi Arabia: Antidumping Duty Orders. Based on affirmative final determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC), Commerce is issuing the antidumping duty (AD) orders on hexamethylenetetramine (hexamine) from Germany, India, and Saudi Arabia. Further, the ITC determined that critical circumstances do not exist with respect to hexamine from Germany and India. In additi",
+    "subject": "Hexamethylenetetramine From the Kingdom of Saudi Arabia (Saudi Arabia): Amended Final Antidumping Duty Determination; Hexamethylenetetramine From Germany, India, and Saudi Arabia: Antidumping Duty Ord",
+    "tariff_action": "new_tariff",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/07/2026-00092/hexamethylenetetramine-from-the-kingdom-of-saudi-arabia-saudi-arabia-amended-final-antidumping-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-07",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-00092.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/07/2026-00092/hexamethylenetetramine-from-the-kingdom-of-saudi-arabia-saudi-arabia-amended-final-antidumping-duty",
+      "published_date": "2026-01-07",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  },
+  {
+    "claim_id": "gdelt_20260107_0053",
+    "claim_text": "Container freight stations lose battle over KPA revised 2025 tariff book",
+    "subject": "Container freight stations lose battle over KPA revised 2025 tariff book",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.standardmedia.co.ke/business/shipping-logistics/article/2001537986/cfss-lose-battle-over-kpas-revised-tarrif-book",
+    "source_name": "standardmedia.co.ke",
+    "published_date": "2026-01-07",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from standardmedia.co.ke via GDELT.",
+    "pedigree": {
+      "source_name": "standardmedia.co.ke",
+      "source_category": "news_wire",
+      "source_url": "https://www.standardmedia.co.ke/business/shipping-logistics/article/2001537986/cfss-lose-battle-over-kpas-revised-tarrif-book",
+      "published_date": "2026-01-07",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  },
+  {
+    "claim_id": "gdelt_20260107_0054",
+    "claim_text": "Container freight stations lose battle over KPA revised 2025 tariff book",
+    "subject": "Container freight stations lose battle over KPA revised 2025 tariff book",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.standardmedia.co.ke/business/article/2001537986/cfss-lose-battle-over-kpa-s-revised-tarrif-book",
+    "source_name": "standardmedia.co.ke",
+    "published_date": "2026-01-07",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 2,
+    "certainty_label": "REPORTED",
+    "certainty_rationale": "News report from standardmedia.co.ke via GDELT.",
+    "pedigree": {
+      "source_name": "standardmedia.co.ke",
+      "source_category": "news_wire",
+      "source_url": "https://www.standardmedia.co.ke/business/article/2001537986/cfss-lose-battle-over-kpa-s-revised-tarrif-book",
+      "published_date": "2026-01-07",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 2
+    }
+  }
+]

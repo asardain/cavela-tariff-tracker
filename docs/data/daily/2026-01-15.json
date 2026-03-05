@@ -1,0 +1,68 @@
+[
+  {
+    "claim_id": "fr_20260115_0011",
+    "claim_text": "Certain Quartz Surface Products From India and the Republic of T\u00fcrkiye: Continuation of Antidumping and Countervailing Duty Orders. As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) orders and countervailing duty (CVD) orders on certain quartz surface products from India and the Republic of T[uuml]rkiye would likely lead to the continuation or recurrence of dumping, countervailable subsidies, and materia",
+    "subject": "Certain Quartz Surface Products From India and the Republic of T\u00fcrkiye: Continuation of Antidumping and Countervailing Duty Orders",
+    "tariff_action": "tariff_removal",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00739/certain-quartz-surface-products-from-india-and-the-republic-of-trkiye-continuation-of-antidumping",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-15",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-00739.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00739/certain-quartz-surface-products-from-india-and-the-republic-of-trkiye-continuation-of-antidumping",
+      "published_date": "2026-01-15",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260115_0033",
+    "claim_text": "Silicon Metal From the Russian Federation: Continuation of Antidumping Duty Order. As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) order on silicon metal from the Russian Federation would likely lead to the continuation or recurrence of dumping and material injury to an industry in the United States, Commerce is publishing a notice of continuation of thi",
+    "subject": "Silicon Metal From the Russian Federation: Continuation of Antidumping Duty Order",
+    "tariff_action": "tariff_removal",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00741/silicon-metal-from-the-russian-federation-continuation-of-antidumping-duty-order",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-15",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 4,
+    "certainty_label": "ANNOUNCED",
+    "certainty_rationale": "Federal Register Notice document #2026-00741.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00741/silicon-metal-from-the-russian-federation-continuation-of-antidumping-duty-order",
+      "published_date": "2026-01-15",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 4
+    }
+  },
+  {
+    "claim_id": "fr_20260115_0130",
+    "claim_text": "Stainless Steel Sheet and Strip in Coils From Taiwan: Final Results of Antidumping Duty Administrative Review, and Final Determination of No Shipments; 2023-2024. The U.S. Department of Commerce (Commerce) determines that stainless steel sheet and strip in coils (SSSSC) from Taiwan was sold in the United States at less than normal value during the period of review (POR) July 1, 2023, through June 30, 2024. Commerce also determines that Yieh United Steel Company (YUSCO) had no shipments to the United States during the POR.",
+    "subject": "Stainless Steel Sheet and Strip in Coils From Taiwan: Final Results of Antidumping Duty Administrative Review, and Final Determination of No Shipments; 2023-2024",
+    "tariff_action": "investigation_opened",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00742/stainless-steel-sheet-and-strip-in-coils-from-taiwan-final-results-of-antidumping-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-01-15",
+    "extracted_date": "2026-03-05",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "Federal Register Notice document #2026-00742.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/01/15/2026-00742/stainless-steel-sheet-and-strip-in-coils-from-taiwan-final-results-of-antidumping-duty",
+      "published_date": "2026-01-15",
+      "extracted_date": "2026-03-05",
+      "certainty_level": 6
+    }
+  }
+]
