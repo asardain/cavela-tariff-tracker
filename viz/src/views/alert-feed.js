@@ -51,7 +51,12 @@ export function mount(container, allClaims, options = {}) {
     .style('font-size', '13px')
     .style('line-height', '1.5')
     .style('z-index', '100')
-    .style('pointer-events', 'none');
+    .style('pointer-events', 'auto');
+
+  let hideTimeout = null;
+  tooltip
+    .on('mouseenter', () => clearTimeout(hideTimeout))
+    .on('mouseleave', () => { hideTimeout = setTimeout(() => tooltip.style('display', 'none'), 150); });
 
   if (!allClaims || allClaims.length === 0) {
     el.append('div').attr('class', 'empty-state')
@@ -179,7 +184,7 @@ export function mount(container, allClaims, options = {}) {
       }, 300);
     }).on('mouseleave', function() {
       clearTimeout(tooltipTimeout);
-      tooltip.style('display', 'none');
+      hideTimeout = setTimeout(() => tooltip.style('display', 'none'), 150);
     });
   }
 
