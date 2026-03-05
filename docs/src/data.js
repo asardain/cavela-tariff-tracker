@@ -131,7 +131,7 @@ export function parseCountry(subject) {
 export function parseCategory(subject, claimText = '') {
   const haystack = `${subject} ${claimText}`.toLowerCase();
   for (const cat of CATEGORIES) {
-    if (cat.patterns.some(p => haystack.includes(p))) return cat.label;
+    if (cat.patterns.some(p => new RegExp(`\\b${p}\\b`).test(haystack))) return cat.label;
   }
   return 'Other';
 }
