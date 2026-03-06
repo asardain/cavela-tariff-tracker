@@ -1,0 +1,10 @@
+{
+  "date": "2026-03-06",
+  "articles_processed": 5,
+  "articles_failed": 0,
+  "claims_extracted": 2,
+  "claims_invalid": 0,
+  "claims_saved": 2,
+  "generated_at": "2026-03-06T09:45:09.741679+00:00",
+  "model": "claude-haiku-4-5"
+}
