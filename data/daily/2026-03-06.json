@@ -1,0 +1,48 @@
+[
+  {
+    "claim_id": "377d97bc-eee6-4acc-ab6a-3b63c2abaeda",
+    "claim_text": "The U.S. Department of Commerce preliminarily finds that countervailable subsidies were provided to producers and exporters of certain oil country tubular goods (OCTG) from the Republic of T\u00fcrkiye during the period of review from January 1, 2023, through December 31, 2023.",
+    "subject": "Oil country tubular goods (OCTG) from the Republic of T\u00fcrkiye",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/03/06/2026-04484/oil-country-tubular-goods-from-the-republic-of-trkiye-preliminary-results-of-countervailing-duty",
+    "source_name": "Federal Register",
+    "published_date": "2026-03-06T05:00:00+00:00",
+    "extracted_date": "2026-03-06T09:45:09.741679+00:00",
+    "certainty_level": 3,
+    "certainty_label": "PROPOSED",
+    "certainty_rationale": "A preliminary finding by Commerce in a Federal Register notice represents a formal proposal in the administrative process, subject to public comment and final determination, not yet a binding rule or final determination.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/03/06/2026-04484/oil-country-tubular-goods-from-the-republic-of-trkiye-preliminary-results-of-countervailing-duty",
+      "published_date": "2026-03-06T05:00:00+00:00",
+      "extracted_date": "2026-03-06T09:45:09.741679+00:00",
+      "certainty_level": 3
+    },
+    "feed_exclude": true
+  },
+  {
+    "claim_id": "ef694484-39ff-4734-8bf6-8b078764cb41",
+    "claim_text": "Antidumping duty orders on ferrovanadium from China and South Africa were continued following determinations that revocation would likely lead to continuation or recurrence of dumping and material injury to a U.S. industry.",
+    "subject": "Ferrovanadium from China and South Africa",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/03/06/2026-04483/ferrovanadium-from-the-peoples-republic-of-china-and-the-republic-of-south-africa-continuation-of",
+    "source_name": "Federal Register",
+    "published_date": "2026-03-06T05:00:00+00:00",
+    "extracted_date": "2026-03-06T09:45:09.741679+00:00",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "The claim describes a final determination on antidumping duty continuation published in the Federal Register, which is the official gazette for final rules and regulatory actions, indicating an implemented regulatory decision rather than a prospective rule.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/03/06/2026-04483/ferrovanadium-from-the-peoples-republic-of-china-and-the-republic-of-south-africa-continuation-of",
+      "published_date": "2026-03-06T05:00:00+00:00",
+      "extracted_date": "2026-03-06T09:45:09.741679+00:00",
+      "certainty_level": 6
+    },
+    "feed_exclude": true
+  }
+]
