@@ -1,0 +1,48 @@
+[
+  {
+    "claim_id": "b9f64103-d178-42ea-82f8-54947d73c6b5",
+    "claim_text": "The U.S. Department of Commerce initiated administrative reviews of antidumping duty orders with January anniversary dates.",
+    "subject": "Products subject to existing antidumping duty orders",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/03/09/2026-04516/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+    "source_name": "Federal Register",
+    "published_date": "2026-03-09T04:00:00+00:00",
+    "extracted_date": "2026-03-08T09:34:35.033303+00:00",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "The claim describes an official agency action published in the Federal Register, which is the formal government record of implemented administrative procedures and regulatory actions by federal agencies.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/03/09/2026-04516/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+      "published_date": "2026-03-09T04:00:00+00:00",
+      "extracted_date": "2026-03-08T09:34:35.033303+00:00",
+      "certainty_level": 6
+    },
+    "feed_exclude": true
+  },
+  {
+    "claim_id": "7784a727-6d3b-45e9-965d-d2ad6606e05e",
+    "claim_text": "The U.S. Department of Commerce initiated administrative reviews of countervailing duty orders with January anniversary dates.",
+    "subject": "Products subject to existing countervailing duty orders",
+    "tariff_action": "other",
+    "effective_date": null,
+    "source_url": "https://www.federalregister.gov/documents/2026/03/09/2026-04516/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+    "source_name": "Federal Register",
+    "published_date": "2026-03-09T04:00:00+00:00",
+    "extracted_date": "2026-03-08T09:34:35.033303+00:00",
+    "certainty_level": 6,
+    "certainty_label": "RULE_PUBLISHED",
+    "certainty_rationale": "This is an official Federal Register document announcing the initiation of administrative reviews, which constitutes published agency action meeting the RULE_PUBLISHED threshold for administrative proceedings.",
+    "pedigree": {
+      "source_name": "Federal Register",
+      "source_category": "official_us_gov",
+      "source_url": "https://www.federalregister.gov/documents/2026/03/09/2026-04516/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
+      "published_date": "2026-03-09T04:00:00+00:00",
+      "extracted_date": "2026-03-08T09:34:35.033303+00:00",
+      "certainty_level": 6
+    },
+    "feed_exclude": true
+  }
+]
